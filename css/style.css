@@ -1,11 +1,8 @@
 body {
   background-color: #281922;
-  padding: 51px 83px 0;
+  padding: 181px 6.07613% 0;
   margin: 0;
-  /*  GENERAL FONT */
-  font-family: "Roboto Light", "Myriad Pro";
-  font-weight: lighter;
-  color: #fff; }
+  /*  MARKS BKG  */ }
   body:before {
     width: 100%;
     content: "";
@@ -20,51 +17,56 @@ body {
     z-index: -1; }
   body > header {
     min-height: 130px;
-    padding: 25px 0 23px 15px;
-    box-sizing: border-box; }
+    padding: 78px 6.07613% 23px;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute; }
     body > header.fixed {
       background-color: #1d191d;
-      width: 100%;
       position: fixed;
-      top: 0;
-      left: 0;
-      padding-left: 98px;
-      padding-right: 83px; }
+      padding-top: 25px; }
+    body > header .logo {
+      margin-left: 15px; }
     body > header .start {
       width: 270px;
       height: 60px;
       box-sizing: border-box;
       background-color: #ffffff;
-      margin-left: 5.85652%;
+      margin-left: 5.92972%;
       margin-top: 15px;
-      margin-right: -0.2%; }
+      margin-right: -0.2%;
+      border-radius: 60px;
+      border: 0;
+      color: #381922;
+      font-size: 1.5em;
+      font-weight: 300;
+      line-height: 1.5; }
     body > header .phone {
-      width: 250px;
       margin-top: 27px;
       color: #ffffff;
-      font-size: 23pt;
-      margin-right: 1%; }
-  body > main .sect {
-    padding: 70px 85px;
-    box-sizing: border-box; }
-    body > main .sect__title {
-      font-size: 60pt;
-      font-family: "Roboto Thin", "Myriad Pro";
-      text-align: center; }
+      font-size: 1.875em;
+      font-weight: 300;
+      line-height: 1.2; }
   body > main .info {
     padding-top: 91px;
     padding-bottom: 91px;
     text-align: center; }
     body > main .info__title {
-      padding: 40px 0;
-      font-size: 53pt;
-      line-height: 1.1; }
-    body > main .info__next {
+      padding: 40px 0; }
+    body > main .info__more {
       padding-top: 27px; }
-      body > main .info__next p {
+      body > main .info__more p {
         font-size: 10pt;
         text-transform: uppercase;
         margin: 0; }
+      body > main .info__more .icon__next {
+        background: url("../img/arrow.png");
+        width: 8px;
+        height: 4px;
+        display: block;
+        margin: 15px auto 0; }
   body > main .funnel {
     min-height: 791px;
     background-color: #524199;
@@ -75,14 +77,171 @@ body {
   body > main .when {
     min-height: 671px;
     background-color: #281922; }
+    body > main .when__item {
+      min-height: 200px;
+      margin-bottom: 50px; }
+      body > main .when__item__icon {
+        margin-bottom: 30px; }
   body > main .services {
     min-height: 1269px;
     background-color: #7f222e; }
+    body > main .services__item {
+      padding: 50px 0;
+      position: relative; }
+      body > main .services__item.underline:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #d74148;
+        position: absolute;
+        bottom: 0; }
+      body > main .services__item.underline--right:before {
+        left: 6.07613%; }
+      body > main .services__item.underline--left:before {
+        left: -6.07613%; }
+      body > main .services__item__label {
+        /*  SEEMS WEIRD -> SHOULD BE CHANGED    */ }
+        body > main .services__item__label .label__icon {
+          border: 1px solid #fff;
+          border-radius: 50%; }
+        body > main .services__item__label .label__price-wrap {
+          background: url(../img/services/price_label.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          height: 40px;
+          position: relative;
+          bottom: 30px; }
+      body > main .services__item__text, body > main .services__item__leave_claim {
+        margin-top: 20px; }
+      body > main .services__item__text {
+        text-align: left; }
+        body > main .services__item__text header {
+          text-transform: uppercase; }
+        body > main .services__item__text ul {
+          margin: 0;
+          padding: 0 40px;
+          list-style-image: url("../img/services/list-image.png"); }
+          body > main .services__item__text ul li {
+            margin-top: 30px; }
+      body > main .services__item__leave_claim {
+        background-color: transparent;
+        border-width: 1px;
+        border-color: #e73d34;
+        border-style: solid;
+        border-radius: 60px;
+        height: 60px;
+        font-size: 1.125em;
+        font-weight: 300;
+        line-height: 2; }
   body > main .cases {
     min-height: 646px;
     background-color: #281922; }
+    body > main .cases__title {
+      position: relative;
+      top: -40px; }
+      body > main .cases__title h2 {
+        display: inline;
+        padding: 0 30px;
+        background: #281922; }
+    body > main .cases__list--wrap {
+      border: 3px solid #382631;
+      padding-bottom: 75px; }
+    body > main .cases__item__icon {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 115.2px;
+      max-height: 115.2px; }
+      body > main .cases__item__icon-wrap {
+        margin-left: auto;
+        margin-right: auto;
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        background: #fafafa;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    body > main .cases__item__title {
+      font-size: 0.938em;
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 34px; }
+      body > main .cases__item__title .name {
+        text-transform: uppercase; }
+      body > main .cases__item__title .desc {
+        color: #b13031; }
+    body > main .cases__item__percents {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      border-top-width: 2px;
+      border-bottom-width: 2px;
+      border-left-width: 0;
+      border-right-width: 0;
+      border-color: #892531;
+      border-style: solid;
+      width: 170px;
+      height: 40px;
+      color: #fafafa;
+      font-size: 1.55em;
+      font-weight: 300;
+      line-height: 1.4; }
+      body > main .cases__item__percents:after, body > main .cases__item__percents:before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 5px;
+        box-sizing: border-box;
+        border-right: 2px solid #892531;
+        border-top: 2px solid #892531; }
+      body > main .cases__item__percents:before {
+        left: -15px;
+        transform: rotate(45deg); }
+      body > main .cases__item__percents:after {
+        right: -15px;
+        transform: rotate(-135deg); }
+    body > main .cases__item__result {
+      margin-top: 20px; }
   body > main .contacts {
     min-height: 686px;
-    background: url("../img/form-bkg.jpg") #1d191d; }
+    background: url("../img/form-bkg.jpg") #1d191d no-repeat bottom right; }
+    body > main .contacts .form__input, body > main .contacts .form__msg, body > main .contacts .form__submit {
+      border: 0;
+      outline: 0; }
+    body > main .contacts .form__input, body > main .contacts .form__msg {
+      margin-bottom: 30px;
+      padding: 17px;
+      color: rgba(0, 0, 0, 0.5); }
+    body > main .contacts .form__input {
+      float: left;
+      width: 48.54369%;
+      height: 50px;
+      margin-right: 2.91262%; }
+      body > main .contacts .form__input:nth-child(2n) {
+        margin-right: 0; }
+      body > main .contacts .form__input:invalid, body > main .contacts .form__input.invalid {
+        outline: 1px solid #ff1d38; }
+        body > main .contacts .form__input:invalid, body > main .contacts .form__input:invalid::placeholder, body > main .contacts .form__input.invalid, body > main .contacts .form__input.invalid::placeholder {
+          color: rgba(255, 29, 56, 0.78); }
+    body > main .contacts .form__msg {
+      width: 100%;
+      height: 200px; }
+    body > main .contacts .form__submit {
+      background-color: #892531;
+      width: 270px;
+      height: 60px;
+      text-transform: uppercase; }
   body > footer {
-    min-height: 143px; }
+    min-height: 143px;
+    padding: 49px 85px;
+    box-sizing: border-box; }
+    body > footer a {
+      border-bottom: 1px solid transparent; }
+      body > footer a:hover {
+        border-bottom: 1px solid #622427; }
+    body > footer .left-side a {
+      display: block; }

@@ -1,5 +1,36 @@
-
+$gridSize: 12 !default
+$sectPadTB: 70px
+$sectPadLR: 85px
 /*  common styles   */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+body
+    /*  GENERAL FONT */
+    font-family: 'Roboto', 'Myriad Pro', sans-serif
+    font-weight: lighter
+    font-size: 16px
+    color: #fff
+    p,a
+        font-size: 1.063em
+        font-weight: 300
+        line-height: 1.647
+        margin: 0
+    a
+        color: #fff
+        &,&:visited,&:focus
+            text-decoration: none
+    h1
+        font-size: 4.375em
+        font-weight: 100
+        line-height: 1.143
+        margin: 0
+    h2
+        font-size: 3.75em
+        font-weight: 100
+        line-height: 1.167
+        margin: 0
+    
 .clr::after
     content :   ''
     clear: both
@@ -13,3 +44,39 @@
 
 .fright 
     float: right
+
+.sect
+    padding: $sectPadTB $sectPadLR
+    box-sizing: border-box
+    &__title
+        text-align: center
+        margin: 0 0 58px
+    &--no-pad
+        padding-left: 0
+        padding-right: 0
+
+/*  LIKE GRID   */
+.list
+    width: 100%
+    > *
+        float: left
+        text-align: center
+    &::after
+        content :   ''
+        clear: both
+        display: table
+        margin: 0
+        padding: 0
+
+    &__item
+        @for $i from 1 to $gridSize
+            &--#{$i}
+                width: $i / $gridSize * 100%
+            &--offset-#{$i}
+                margin-left: $i / $gridSize * 100%
+            @for $j from 1 to $gridSize
+                &--#{$j}--offset-#{$i}
+                    width: $j / $gridSize * 100%
+                    margin-left: $i / $gridSize * 100%
+        &--#{$gridSize}
+            width: 100%
