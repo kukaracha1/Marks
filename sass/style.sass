@@ -1,17 +1,100 @@
+$mainWidth: 1366px !default
+$bodyPadLR: 83px
+$sectPadTB: 70px
+$sectPadLR: 85px
+
 body
+    background-color: #281922
+    padding: 51px $bodyPadLR 0
+    margin: 0
+    /*  GENERAL FONT */
+    font-family: 'Roboto Light', 'Myriad Pro'
+    font-weight: lighter
+    color: #fff
+
+    &:before
+        width: 100%
+        content: ''
+        display: block
+        background: url('../img/bkg.jpg') #c63245 no-repeat
+        /* SHOULD CHECK IF ITS GOOD FOR IE 10 */
+        background-blend-mode: darken
+        height: 768px
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
     >
         header
-        
+            min-height: 130px
+            padding: 25px 0 23px 15px
+            box-sizing: border-box
+
+            &.fixed
+                background-color: #1d191d
+                width: 100%
+                position: fixed
+                top: 0
+                left: 0
+                padding-left: $bodyPadLR + 15px
+                padding-right: $bodyPadLR
+
+            .start
+                width: 270px
+                height: 60px
+                box-sizing: border-box
+                background-color: #ffffff
+                margin-left: (80px / $mainWidth)*100%
+                margin-top: 15px
+                margin-right: -0.2%
+            .phone
+                width: 250px
+                margin-top: 27px
+                color: #ffffff
+                font-size: 23pt
+                margin-right: 1%
         main
+            .sect
+                padding: $sectPadTB $sectPadLR
+                box-sizing: border-box
+                &__title
+                    font-size: 60pt
+                    font-family: 'Roboto Thin', 'Myriad Pro'
+                    text-align: center
+            .info
+                padding-top: 91px
+                padding-bottom:  91px
+                text-align: center
+                &__title
+                    padding: 40px 0
+                    font-size: 53pt
+                    line-height: 1.1
+                &__next
+                    padding-top: 27px
+                    p
+                        font-size: 10pt
+                        text-transform: uppercase
+                        margin: 0
+            .funnel
+                min-height: 791px 
+                background-color: #524199
+                padding-top: 69px
+                padding-bottom: 35px
+                &__title
+                    text-align: left
+            .when
+                min-height: 671px
+                background-color: #281922                
+            .services
+                min-height: 1269px
+                background-color: #7f222e                
+            .cases
+                min-height: 646px
+                background-color: #281922                
+            .contacts
+                min-height: 686px
+                background: url('../img/form-bkg.jpg') #1d191d                  
 
         footer
+            min-height: 143px
 
-
-/*  MEDIA */
-@media screen and (min-width    :   980px)
-
-@media screen and (max-width    :   980px) 
-
-@media screen and (max-width    :   770px) 
-
-@media screen and (max-width    :   320px)
