@@ -19,11 +19,10 @@ body
         top: 0
         left: 0
         z-index: -1
-    
     >
         header
             min-height: 130px
-            padding: 25px+53px $bodyPadLR 23px
+            padding: 25px+51px #{$bodyPadLR + 15/1366*100%} 23px
             box-sizing: border-box
             width: 100%
             top: 0
@@ -34,17 +33,13 @@ body
                 background-color: #1d191d
                 position: fixed
                 padding-top: 25px
-            .logo
-                margin-left: 15px
-
             .start
                 width: 270px
                 height: 60px
                 box-sizing: border-box
                 background-color: #ffffff
-                margin-left: (81px / $bodyWidth)*100%
-                margin-top: 15px
-                margin-right: -0.2%
+                margin-left: 6.92972%
+                margin-top: 14px
                 border-radius: 60px
                 border: 0
                 color: #381922
@@ -52,26 +47,29 @@ body
                 font-weight: 300
                 line-height: 1.5
             .phone
-                margin-top: 27px
+                margin-top: 28px
                 color: #ffffff
-                font-size: 1.875em
+                font-size: 1.775em
                 font-weight: 300
                 line-height: 1.2
         main
             .info
+                min-height: 474px
                 padding-top: 91px
                 padding-bottom:  91px
                 text-align: center
                 &__title
-                    padding: 40px 0
+                    padding: 32px 20px
+                    margin: 0
                 &__more
-                    padding-top: 27px
+                    padding-top: 35px
                     p
-                        font-size: 10pt
+                        font-size: 0.75em
+                        letter-spacing: 0.12em
                         text-transform: uppercase
-                        margin: 0
                     .icon__next
-                        background: url('../img/arrow.png')
+                    // will be svg
+                        background: url("../img/arrow.png") no-repeat center center
                         width: 8px
                         height: 4px
                         display: block
@@ -79,12 +77,11 @@ body
             .funnel
                 min-height: 791px 
                 background-color: #524199
-                padding-top: 69px
-                padding-bottom: 35px
+                padding-bottom: 16px
                 &__title
                     text-align: left
                 &__list
-                    width: 47.05%
+                    width: 47.85%
                     &__item
                         width: 100%
                         min-height: 104px
@@ -95,36 +92,48 @@ body
                         flex-direction: column
                         &:last-child
                             border-color: transparent
+                        .title,.desc
+                            line-height: 1
                         .title
-                            margin-bottom: 17px
+                            font-size: 1.063em
                         .desc
                             color:  #949193
                             font-size: 0.813em
                             font-weight: 300
+                            margin-top: 14px
+                            margin-bottom: 6px
 
                         .result
                             display: none
                 &__img
                     position: relative
                     top: -22.5px
-                    width: 100% - 47.05%
+                    width: 100% - 47.85%
 
             .when
                 min-height: 671px
                 background-color: #281922    
+                padding-bottom: 0
                 &__item
-                    min-height: 200px
-                    margin-bottom: 50px  
+                    min-height: 220px
+                    margin-bottom: 29px  
+                    padding: 0 3.5%
+                    box-sizing: border-box
                     &__icon
-                        margin-bottom: 30px  
-                        width: 102px
-                        height: 102px     
+                        width: 64px
+                        height: 64px
+                        margin-top: 20px
+                        margin-bottom: 24px
+                    &__text
             .services
-                min-height: 1269px
+                min-height: 1270px
                 background-color: #7f222e   
-               
+                &__title
+                    margin-bottom: 13px
                 &__item
-                    padding: 50px 0
+                    padding: 49px 0 44px
+                    box-sizing: border-box
+                    min-height: 315px
                     position: relative
                     &.underline
                         &:before
@@ -140,6 +149,8 @@ body
                         &--left:before
                             left: -$bodyPadLR
                     &__label
+                        width: 22.5%
+                        margin-right: 1.4%
                         // text-align: left
                         /*  SEEMS WEIRD -> SHOULD BE CHANGED    */
                         .label
@@ -155,21 +166,26 @@ body
                                     background-position: center center
                                     height: 40px
                                     position: relative
-                                    bottom: 30px
+                                    bottom: 33px
                     &__text, &__leave_claim
                         margin-top: 20px
                     &__text
                         text-align: left
+                        margin-top: 14px
+                        width: 52.4%
                         header
                             text-transform: uppercase
+                            p
+                                letter-spacing: 0.1em
+                                margin-bottom: 18px
                         ul
                             margin: 0
                             padding: 0 40px
                             list-style-image: url('../img/services/list-image.png')
                             li
-                                margin-top: 30px
-
-
+                                margin-top: 16.5px
+                                font-size: 1.1em
+                                line-height: 1.647
                     &__leave_claim
                         background-color: transparent
                         border-width: 1px
@@ -177,24 +193,28 @@ body
                         border-style: solid
                         border-radius: 60px
                         height: 60px
-                        font-size: 1.125em
+                        font-size: 1.119em
                         font-weight: 300
                         line-height: 2
             .cases
                 min-height: 646px
                 background-color: #281922  
+                padding-top: 90px
                 &__title
                     position: relative
-                    top: -40px
+                    top: -30px
+                    margin-bottom: 13px
                     h2
                         display: inline
-                        padding: 0 30px
+                        padding: 0 25px
                         background: #281922
                 &__list
                     &--wrap          
                         border: 3px solid #382631
-                        padding-bottom: 75px
+                        padding-bottom: 68px
                 &__item
+                    padding: 0 5.7787492776%
+                    box-sizing: border-box
                     &__icon
                         display: inline-block
                         vertical-align: middle
@@ -208,19 +228,20 @@ body
                             border-radius: 50%
                             background: #fafafa
                             box-sizing: border-box
-                            margin-bottom: 32px
+                            margin-bottom: 25px
                             display: flex
                             justify-content: center
                             align-items: center
                     &__title
-                        font-size: 0.938em
                         font-weight: 300
-                        line-height: 1.6
-                        margin-bottom: 34px
+                        margin-bottom: 6px
+                        min-height: 74px
                         .name
                             text-transform: uppercase
                         .desc
                             color:  #b13031
+                            letter-spacing: 0.02em
+                            font-size: 0.938em
                     &__percents
                         margin-left: auto
                         margin-right: auto
@@ -231,12 +252,14 @@ body
                         border-right-width: 0
                         border-color:  #892531
                         border-style: solid
-                        width: 170px
-                        height: 40px
+                        width: 165px
+                        height: 36px
                         color:  #fafafa
-                        font-size: 1.55em
+                        font-size: 1.35em
                         font-weight: 300
-                        line-height: 1.4
+                        line-height: 1.6
+                        text-transform: uppercase
+                        letter-spacing: 0.04em
                         &:after,&:before
                             content: ""
                             width: 30px
@@ -254,7 +277,7 @@ body
                             transform: rotate(-135deg)
 
                     &__result
-                        margin-top: 20px
+                        margin-top: 13px
 
 
             .contacts
@@ -287,7 +310,9 @@ body
                         outline: 0
                     &:hover
                         transform: rotate(90deg)
-
+                &__title
+                    margin-top: 1px
+                    margin-bottom: 45px
 
                 .form
                     &__input,
@@ -320,16 +345,22 @@ body
                         width: 270px
                         height: 60px
                         text-transform: uppercase
+                        font-size: 1.2em
         footer
             min-height: 143px
-            padding: 49px 85px
+            padding: 32px 85px
             box-sizing: border-box
             a
                 border-bottom: 1px solid transparent
+                font-size: 1.063em
                 &:hover
                     border-bottom: 1px solid #622427
             .left-side
+                .phone
+                .address
+                    letter-spacing: 0
                 a
                     display: block
+                    letter-spacing: -0.01em
 
 

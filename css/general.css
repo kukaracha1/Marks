@@ -19,19 +19,25 @@ body {
   line-height: 1;
   color: #fff; }
   body p, body a {
-    font-size: 1.063em;
+    font-size: 1.089em;
     font-weight: 300;
+    line-height: 1.647;
+    letter-spacing: -0.005em;
     margin: 0; }
   body a {
     color: #fff; }
     body a, body a:visited, body a:focus {
       text-decoration: none; }
   body h1 {
-    font-size: 4.375em;
+    font-size: 4.3em;
     font-weight: 100;
-    margin: 0; }
+    margin: 0;
+    letter-spacing: -0.024Em;
+    line-height: 1.19;
+    margin-left: 8px; }
   body h2 {
-    font-size: 3.75em;
+    font-size: 3.6em;
+    letter-spacing: -0.017em;
     font-weight: 100;
     margin: 0; }
 
@@ -48,12 +54,13 @@ body {
 .fright {
   float: right; }
 
-.sect {
-  padding: 70px 85px;
+.sect, [class^='sect--'],
+[class*=' sect--'] {
+  padding: 64px 85px 0;
   box-sizing: border-box; }
   .sect__title {
     text-align: center;
-    margin: 0 0 58px; }
+    margin: 0 0 42px; }
   .sect--no-pad {
     padding-left: 0;
     padding-right: 0; }

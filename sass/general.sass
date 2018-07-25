@@ -1,5 +1,5 @@
 $gridSize: 12 !default
-$sectPadTB: 70px
+$sectPadTB: 64px
 $sectPadLR: 85px
 /*  common styles   */
 
@@ -24,23 +24,26 @@ body
     line-height: 1
     color: #fff
     p,a
-        font-size: 1.063em
+        font-size: 1.089em
         font-weight: 300
-        // line-height: 1.647
+        line-height: 1.647
+        letter-spacing: -0.005em
         margin: 0
     a
         color: #fff
         &,&:visited,&:focus
             text-decoration: none
     h1
-        font-size: 4.375em
+        font-size: 4.3em
         font-weight: 100
-        // line-height: 1.143
         margin: 0
+        letter-spacing: -0.024Em
+        line-height: 1.19
+        margin-left: 8px
     h2
-        font-size: 3.75em
+        font-size: 3.6em
+        letter-spacing: -0.017em
         font-weight: 100
-        // line-height: 1.167
         margin: 0
     
 .clr::after
@@ -57,12 +60,15 @@ body
 .fright 
     float: right
 
+[class^='sect--'],
+[class*=' sect--']
+    @extend .sect
 .sect
-    padding: $sectPadTB $sectPadLR
+    padding: $sectPadTB $sectPadLR 0
     box-sizing: border-box
     &__title
         text-align: center
-        margin: 0 0 58px
+        margin: 0 0 42px
     &--no-pad
         padding-left: 0
         padding-right: 0
