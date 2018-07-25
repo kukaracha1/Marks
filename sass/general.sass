@@ -21,11 +21,12 @@ body
     font-family: 'Roboto', 'Myriad Pro', sans-serif
     font-weight: lighter
     font-size: 16px
+    line-height: 1
     color: #fff
     p,a
         font-size: 1.063em
         font-weight: 300
-        line-height: 1.647
+        // line-height: 1.647
         margin: 0
     a
         color: #fff
@@ -34,12 +35,12 @@ body
     h1
         font-size: 4.375em
         font-weight: 100
-        line-height: 1.143
+        // line-height: 1.143
         margin: 0
     h2
         font-size: 3.75em
         font-weight: 100
-        line-height: 1.167
+        // line-height: 1.167
         margin: 0
     
 .clr::after
@@ -67,11 +68,17 @@ body
         padding-right: 0
 
 /*  LIKE GRID   */
+[class^='list--'],
+[class*=' list--']
+    @extend .list
 .list
     width: 100%
     > *
         float: left
         text-align: center
+    &--l
+        > *
+            text-align: left
     &::after
         content :   ''
         clear: both
@@ -79,15 +86,20 @@ body
         margin: 0
         padding: 0
 
-    &__item
-        @for $i from 1 to $gridSize
-            &--#{$i}
-                width: $i / $gridSize * 100%
-            &--offset-#{$i}
+.list__item
+    @for $i from 1 to $gridSize
+        &--#{$i}
+            width: $i / $gridSize * 100%
+        &--offset-#{$i}
+            margin-left: $i / $gridSize * 100%
+        @for $j from 1 to $gridSize
+            &--#{$j}--offset-#{$i}
+                width: $j / $gridSize * 100%
                 margin-left: $i / $gridSize * 100%
-            @for $j from 1 to $gridSize
-                &--#{$j}--offset-#{$i}
-                    width: $j / $gridSize * 100%
-                    margin-left: $i / $gridSize * 100%
-        &--#{$gridSize}
-            width: 100%
+    &--#{$gridSize}
+        width: 100%
+        
+// its not working
+// [class^='list__item--'],
+// [class*=' list__item--']
+//     @extend .list__item

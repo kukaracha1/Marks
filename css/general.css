@@ -16,11 +16,11 @@ body {
   font-family: "Roboto", "Myriad Pro", sans-serif;
   font-weight: lighter;
   font-size: 16px;
+  line-height: 1;
   color: #fff; }
   body p, body a {
     font-size: 1.063em;
     font-weight: 300;
-    line-height: 1.647;
     margin: 0; }
   body a {
     color: #fff; }
@@ -29,12 +29,10 @@ body {
   body h1 {
     font-size: 4.375em;
     font-weight: 100;
-    line-height: 1.143;
     margin: 0; }
   body h2 {
     font-size: 3.75em;
     font-weight: 100;
-    line-height: 1.167;
     margin: 0; }
 
 .clr::after {
@@ -61,423 +59,429 @@ body {
     padding-right: 0; }
 
 /*  LIKE GRID   */
-.list {
+.list, [class^='list--'],
+[class*=' list--'] {
   width: 100%; }
-  .list > * {
+  .list > *, [class^='list--'] > *,
+  [class*=' list--'] > * {
     float: left;
     text-align: center; }
-  .list::after {
+  .list--l > * {
+    text-align: left; }
+  .list::after, [class^='list--']::after,
+  [class*=' list--']::after {
     content: "";
     clear: both;
     display: table;
     margin: 0;
     padding: 0; }
-  .list__item--1 {
-    width: 8.33333%; }
-  .list__item--offset-1 {
-    margin-left: 8.33333%; }
-  .list__item--1--offset-1 {
-    width: 8.33333%;
-    margin-left: 8.33333%; }
-  .list__item--2--offset-1 {
-    width: 16.66667%;
-    margin-left: 8.33333%; }
-  .list__item--3--offset-1 {
-    width: 25%;
-    margin-left: 8.33333%; }
-  .list__item--4--offset-1 {
-    width: 33.33333%;
-    margin-left: 8.33333%; }
-  .list__item--5--offset-1 {
-    width: 41.66667%;
-    margin-left: 8.33333%; }
-  .list__item--6--offset-1 {
-    width: 50%;
-    margin-left: 8.33333%; }
-  .list__item--7--offset-1 {
-    width: 58.33333%;
-    margin-left: 8.33333%; }
-  .list__item--8--offset-1 {
-    width: 66.66667%;
-    margin-left: 8.33333%; }
-  .list__item--9--offset-1 {
-    width: 75%;
-    margin-left: 8.33333%; }
-  .list__item--10--offset-1 {
-    width: 83.33333%;
-    margin-left: 8.33333%; }
-  .list__item--11--offset-1 {
-    width: 91.66667%;
-    margin-left: 8.33333%; }
-  .list__item--2 {
-    width: 16.66667%; }
-  .list__item--offset-2 {
-    margin-left: 16.66667%; }
-  .list__item--1--offset-2 {
-    width: 8.33333%;
-    margin-left: 16.66667%; }
-  .list__item--2--offset-2 {
-    width: 16.66667%;
-    margin-left: 16.66667%; }
-  .list__item--3--offset-2 {
-    width: 25%;
-    margin-left: 16.66667%; }
-  .list__item--4--offset-2 {
-    width: 33.33333%;
-    margin-left: 16.66667%; }
-  .list__item--5--offset-2 {
-    width: 41.66667%;
-    margin-left: 16.66667%; }
-  .list__item--6--offset-2 {
-    width: 50%;
-    margin-left: 16.66667%; }
-  .list__item--7--offset-2 {
-    width: 58.33333%;
-    margin-left: 16.66667%; }
-  .list__item--8--offset-2 {
-    width: 66.66667%;
-    margin-left: 16.66667%; }
-  .list__item--9--offset-2 {
-    width: 75%;
-    margin-left: 16.66667%; }
-  .list__item--10--offset-2 {
-    width: 83.33333%;
-    margin-left: 16.66667%; }
-  .list__item--11--offset-2 {
-    width: 91.66667%;
-    margin-left: 16.66667%; }
-  .list__item--3 {
-    width: 25%; }
-  .list__item--offset-3 {
-    margin-left: 25%; }
-  .list__item--1--offset-3 {
-    width: 8.33333%;
-    margin-left: 25%; }
-  .list__item--2--offset-3 {
-    width: 16.66667%;
-    margin-left: 25%; }
-  .list__item--3--offset-3 {
-    width: 25%;
-    margin-left: 25%; }
-  .list__item--4--offset-3 {
-    width: 33.33333%;
-    margin-left: 25%; }
-  .list__item--5--offset-3 {
-    width: 41.66667%;
-    margin-left: 25%; }
-  .list__item--6--offset-3 {
-    width: 50%;
-    margin-left: 25%; }
-  .list__item--7--offset-3 {
-    width: 58.33333%;
-    margin-left: 25%; }
-  .list__item--8--offset-3 {
-    width: 66.66667%;
-    margin-left: 25%; }
-  .list__item--9--offset-3 {
-    width: 75%;
-    margin-left: 25%; }
-  .list__item--10--offset-3 {
-    width: 83.33333%;
-    margin-left: 25%; }
-  .list__item--11--offset-3 {
-    width: 91.66667%;
-    margin-left: 25%; }
-  .list__item--4 {
-    width: 33.33333%; }
-  .list__item--offset-4 {
-    margin-left: 33.33333%; }
-  .list__item--1--offset-4 {
-    width: 8.33333%;
-    margin-left: 33.33333%; }
-  .list__item--2--offset-4 {
-    width: 16.66667%;
-    margin-left: 33.33333%; }
-  .list__item--3--offset-4 {
-    width: 25%;
-    margin-left: 33.33333%; }
-  .list__item--4--offset-4 {
-    width: 33.33333%;
-    margin-left: 33.33333%; }
-  .list__item--5--offset-4 {
-    width: 41.66667%;
-    margin-left: 33.33333%; }
-  .list__item--6--offset-4 {
-    width: 50%;
-    margin-left: 33.33333%; }
-  .list__item--7--offset-4 {
-    width: 58.33333%;
-    margin-left: 33.33333%; }
-  .list__item--8--offset-4 {
-    width: 66.66667%;
-    margin-left: 33.33333%; }
-  .list__item--9--offset-4 {
-    width: 75%;
-    margin-left: 33.33333%; }
-  .list__item--10--offset-4 {
-    width: 83.33333%;
-    margin-left: 33.33333%; }
-  .list__item--11--offset-4 {
-    width: 91.66667%;
-    margin-left: 33.33333%; }
-  .list__item--5 {
-    width: 41.66667%; }
-  .list__item--offset-5 {
-    margin-left: 41.66667%; }
-  .list__item--1--offset-5 {
-    width: 8.33333%;
-    margin-left: 41.66667%; }
-  .list__item--2--offset-5 {
-    width: 16.66667%;
-    margin-left: 41.66667%; }
-  .list__item--3--offset-5 {
-    width: 25%;
-    margin-left: 41.66667%; }
-  .list__item--4--offset-5 {
-    width: 33.33333%;
-    margin-left: 41.66667%; }
-  .list__item--5--offset-5 {
-    width: 41.66667%;
-    margin-left: 41.66667%; }
-  .list__item--6--offset-5 {
-    width: 50%;
-    margin-left: 41.66667%; }
-  .list__item--7--offset-5 {
-    width: 58.33333%;
-    margin-left: 41.66667%; }
-  .list__item--8--offset-5 {
-    width: 66.66667%;
-    margin-left: 41.66667%; }
-  .list__item--9--offset-5 {
-    width: 75%;
-    margin-left: 41.66667%; }
-  .list__item--10--offset-5 {
-    width: 83.33333%;
-    margin-left: 41.66667%; }
-  .list__item--11--offset-5 {
-    width: 91.66667%;
-    margin-left: 41.66667%; }
-  .list__item--6 {
-    width: 50%; }
-  .list__item--offset-6 {
-    margin-left: 50%; }
-  .list__item--1--offset-6 {
-    width: 8.33333%;
-    margin-left: 50%; }
-  .list__item--2--offset-6 {
-    width: 16.66667%;
-    margin-left: 50%; }
-  .list__item--3--offset-6 {
-    width: 25%;
-    margin-left: 50%; }
-  .list__item--4--offset-6 {
-    width: 33.33333%;
-    margin-left: 50%; }
-  .list__item--5--offset-6 {
-    width: 41.66667%;
-    margin-left: 50%; }
-  .list__item--6--offset-6 {
-    width: 50%;
-    margin-left: 50%; }
-  .list__item--7--offset-6 {
-    width: 58.33333%;
-    margin-left: 50%; }
-  .list__item--8--offset-6 {
-    width: 66.66667%;
-    margin-left: 50%; }
-  .list__item--9--offset-6 {
-    width: 75%;
-    margin-left: 50%; }
-  .list__item--10--offset-6 {
-    width: 83.33333%;
-    margin-left: 50%; }
-  .list__item--11--offset-6 {
-    width: 91.66667%;
-    margin-left: 50%; }
-  .list__item--7 {
-    width: 58.33333%; }
-  .list__item--offset-7 {
-    margin-left: 58.33333%; }
-  .list__item--1--offset-7 {
-    width: 8.33333%;
-    margin-left: 58.33333%; }
-  .list__item--2--offset-7 {
-    width: 16.66667%;
-    margin-left: 58.33333%; }
-  .list__item--3--offset-7 {
-    width: 25%;
-    margin-left: 58.33333%; }
-  .list__item--4--offset-7 {
-    width: 33.33333%;
-    margin-left: 58.33333%; }
-  .list__item--5--offset-7 {
-    width: 41.66667%;
-    margin-left: 58.33333%; }
-  .list__item--6--offset-7 {
-    width: 50%;
-    margin-left: 58.33333%; }
-  .list__item--7--offset-7 {
-    width: 58.33333%;
-    margin-left: 58.33333%; }
-  .list__item--8--offset-7 {
-    width: 66.66667%;
-    margin-left: 58.33333%; }
-  .list__item--9--offset-7 {
-    width: 75%;
-    margin-left: 58.33333%; }
-  .list__item--10--offset-7 {
-    width: 83.33333%;
-    margin-left: 58.33333%; }
-  .list__item--11--offset-7 {
-    width: 91.66667%;
-    margin-left: 58.33333%; }
-  .list__item--8 {
-    width: 66.66667%; }
-  .list__item--offset-8 {
-    margin-left: 66.66667%; }
-  .list__item--1--offset-8 {
-    width: 8.33333%;
-    margin-left: 66.66667%; }
-  .list__item--2--offset-8 {
-    width: 16.66667%;
-    margin-left: 66.66667%; }
-  .list__item--3--offset-8 {
-    width: 25%;
-    margin-left: 66.66667%; }
-  .list__item--4--offset-8 {
-    width: 33.33333%;
-    margin-left: 66.66667%; }
-  .list__item--5--offset-8 {
-    width: 41.66667%;
-    margin-left: 66.66667%; }
-  .list__item--6--offset-8 {
-    width: 50%;
-    margin-left: 66.66667%; }
-  .list__item--7--offset-8 {
-    width: 58.33333%;
-    margin-left: 66.66667%; }
-  .list__item--8--offset-8 {
-    width: 66.66667%;
-    margin-left: 66.66667%; }
-  .list__item--9--offset-8 {
-    width: 75%;
-    margin-left: 66.66667%; }
-  .list__item--10--offset-8 {
-    width: 83.33333%;
-    margin-left: 66.66667%; }
-  .list__item--11--offset-8 {
-    width: 91.66667%;
-    margin-left: 66.66667%; }
-  .list__item--9 {
-    width: 75%; }
-  .list__item--offset-9 {
-    margin-left: 75%; }
-  .list__item--1--offset-9 {
-    width: 8.33333%;
-    margin-left: 75%; }
-  .list__item--2--offset-9 {
-    width: 16.66667%;
-    margin-left: 75%; }
-  .list__item--3--offset-9 {
-    width: 25%;
-    margin-left: 75%; }
-  .list__item--4--offset-9 {
-    width: 33.33333%;
-    margin-left: 75%; }
-  .list__item--5--offset-9 {
-    width: 41.66667%;
-    margin-left: 75%; }
-  .list__item--6--offset-9 {
-    width: 50%;
-    margin-left: 75%; }
-  .list__item--7--offset-9 {
-    width: 58.33333%;
-    margin-left: 75%; }
-  .list__item--8--offset-9 {
-    width: 66.66667%;
-    margin-left: 75%; }
-  .list__item--9--offset-9 {
-    width: 75%;
-    margin-left: 75%; }
-  .list__item--10--offset-9 {
-    width: 83.33333%;
-    margin-left: 75%; }
-  .list__item--11--offset-9 {
-    width: 91.66667%;
-    margin-left: 75%; }
-  .list__item--10 {
-    width: 83.33333%; }
-  .list__item--offset-10 {
-    margin-left: 83.33333%; }
-  .list__item--1--offset-10 {
-    width: 8.33333%;
-    margin-left: 83.33333%; }
-  .list__item--2--offset-10 {
-    width: 16.66667%;
-    margin-left: 83.33333%; }
-  .list__item--3--offset-10 {
-    width: 25%;
-    margin-left: 83.33333%; }
-  .list__item--4--offset-10 {
-    width: 33.33333%;
-    margin-left: 83.33333%; }
-  .list__item--5--offset-10 {
-    width: 41.66667%;
-    margin-left: 83.33333%; }
-  .list__item--6--offset-10 {
-    width: 50%;
-    margin-left: 83.33333%; }
-  .list__item--7--offset-10 {
-    width: 58.33333%;
-    margin-left: 83.33333%; }
-  .list__item--8--offset-10 {
-    width: 66.66667%;
-    margin-left: 83.33333%; }
-  .list__item--9--offset-10 {
-    width: 75%;
-    margin-left: 83.33333%; }
-  .list__item--10--offset-10 {
-    width: 83.33333%;
-    margin-left: 83.33333%; }
-  .list__item--11--offset-10 {
-    width: 91.66667%;
-    margin-left: 83.33333%; }
-  .list__item--11 {
-    width: 91.66667%; }
-  .list__item--offset-11 {
-    margin-left: 91.66667%; }
-  .list__item--1--offset-11 {
-    width: 8.33333%;
-    margin-left: 91.66667%; }
-  .list__item--2--offset-11 {
-    width: 16.66667%;
-    margin-left: 91.66667%; }
-  .list__item--3--offset-11 {
-    width: 25%;
-    margin-left: 91.66667%; }
-  .list__item--4--offset-11 {
-    width: 33.33333%;
-    margin-left: 91.66667%; }
-  .list__item--5--offset-11 {
-    width: 41.66667%;
-    margin-left: 91.66667%; }
-  .list__item--6--offset-11 {
-    width: 50%;
-    margin-left: 91.66667%; }
-  .list__item--7--offset-11 {
-    width: 58.33333%;
-    margin-left: 91.66667%; }
-  .list__item--8--offset-11 {
-    width: 66.66667%;
-    margin-left: 91.66667%; }
-  .list__item--9--offset-11 {
-    width: 75%;
-    margin-left: 91.66667%; }
-  .list__item--10--offset-11 {
-    width: 83.33333%;
-    margin-left: 91.66667%; }
-  .list__item--11--offset-11 {
-    width: 91.66667%;
-    margin-left: 91.66667%; }
-  .list__item--12 {
-    width: 100%; }
+
+.list__item--1 {
+  width: 8.33333%; }
+.list__item--offset-1 {
+  margin-left: 8.33333%; }
+.list__item--1--offset-1 {
+  width: 8.33333%;
+  margin-left: 8.33333%; }
+.list__item--2--offset-1 {
+  width: 16.66667%;
+  margin-left: 8.33333%; }
+.list__item--3--offset-1 {
+  width: 25%;
+  margin-left: 8.33333%; }
+.list__item--4--offset-1 {
+  width: 33.33333%;
+  margin-left: 8.33333%; }
+.list__item--5--offset-1 {
+  width: 41.66667%;
+  margin-left: 8.33333%; }
+.list__item--6--offset-1 {
+  width: 50%;
+  margin-left: 8.33333%; }
+.list__item--7--offset-1 {
+  width: 58.33333%;
+  margin-left: 8.33333%; }
+.list__item--8--offset-1 {
+  width: 66.66667%;
+  margin-left: 8.33333%; }
+.list__item--9--offset-1 {
+  width: 75%;
+  margin-left: 8.33333%; }
+.list__item--10--offset-1 {
+  width: 83.33333%;
+  margin-left: 8.33333%; }
+.list__item--11--offset-1 {
+  width: 91.66667%;
+  margin-left: 8.33333%; }
+.list__item--2 {
+  width: 16.66667%; }
+.list__item--offset-2 {
+  margin-left: 16.66667%; }
+.list__item--1--offset-2 {
+  width: 8.33333%;
+  margin-left: 16.66667%; }
+.list__item--2--offset-2 {
+  width: 16.66667%;
+  margin-left: 16.66667%; }
+.list__item--3--offset-2 {
+  width: 25%;
+  margin-left: 16.66667%; }
+.list__item--4--offset-2 {
+  width: 33.33333%;
+  margin-left: 16.66667%; }
+.list__item--5--offset-2 {
+  width: 41.66667%;
+  margin-left: 16.66667%; }
+.list__item--6--offset-2 {
+  width: 50%;
+  margin-left: 16.66667%; }
+.list__item--7--offset-2 {
+  width: 58.33333%;
+  margin-left: 16.66667%; }
+.list__item--8--offset-2 {
+  width: 66.66667%;
+  margin-left: 16.66667%; }
+.list__item--9--offset-2 {
+  width: 75%;
+  margin-left: 16.66667%; }
+.list__item--10--offset-2 {
+  width: 83.33333%;
+  margin-left: 16.66667%; }
+.list__item--11--offset-2 {
+  width: 91.66667%;
+  margin-left: 16.66667%; }
+.list__item--3 {
+  width: 25%; }
+.list__item--offset-3 {
+  margin-left: 25%; }
+.list__item--1--offset-3 {
+  width: 8.33333%;
+  margin-left: 25%; }
+.list__item--2--offset-3 {
+  width: 16.66667%;
+  margin-left: 25%; }
+.list__item--3--offset-3 {
+  width: 25%;
+  margin-left: 25%; }
+.list__item--4--offset-3 {
+  width: 33.33333%;
+  margin-left: 25%; }
+.list__item--5--offset-3 {
+  width: 41.66667%;
+  margin-left: 25%; }
+.list__item--6--offset-3 {
+  width: 50%;
+  margin-left: 25%; }
+.list__item--7--offset-3 {
+  width: 58.33333%;
+  margin-left: 25%; }
+.list__item--8--offset-3 {
+  width: 66.66667%;
+  margin-left: 25%; }
+.list__item--9--offset-3 {
+  width: 75%;
+  margin-left: 25%; }
+.list__item--10--offset-3 {
+  width: 83.33333%;
+  margin-left: 25%; }
+.list__item--11--offset-3 {
+  width: 91.66667%;
+  margin-left: 25%; }
+.list__item--4 {
+  width: 33.33333%; }
+.list__item--offset-4 {
+  margin-left: 33.33333%; }
+.list__item--1--offset-4 {
+  width: 8.33333%;
+  margin-left: 33.33333%; }
+.list__item--2--offset-4 {
+  width: 16.66667%;
+  margin-left: 33.33333%; }
+.list__item--3--offset-4 {
+  width: 25%;
+  margin-left: 33.33333%; }
+.list__item--4--offset-4 {
+  width: 33.33333%;
+  margin-left: 33.33333%; }
+.list__item--5--offset-4 {
+  width: 41.66667%;
+  margin-left: 33.33333%; }
+.list__item--6--offset-4 {
+  width: 50%;
+  margin-left: 33.33333%; }
+.list__item--7--offset-4 {
+  width: 58.33333%;
+  margin-left: 33.33333%; }
+.list__item--8--offset-4 {
+  width: 66.66667%;
+  margin-left: 33.33333%; }
+.list__item--9--offset-4 {
+  width: 75%;
+  margin-left: 33.33333%; }
+.list__item--10--offset-4 {
+  width: 83.33333%;
+  margin-left: 33.33333%; }
+.list__item--11--offset-4 {
+  width: 91.66667%;
+  margin-left: 33.33333%; }
+.list__item--5 {
+  width: 41.66667%; }
+.list__item--offset-5 {
+  margin-left: 41.66667%; }
+.list__item--1--offset-5 {
+  width: 8.33333%;
+  margin-left: 41.66667%; }
+.list__item--2--offset-5 {
+  width: 16.66667%;
+  margin-left: 41.66667%; }
+.list__item--3--offset-5 {
+  width: 25%;
+  margin-left: 41.66667%; }
+.list__item--4--offset-5 {
+  width: 33.33333%;
+  margin-left: 41.66667%; }
+.list__item--5--offset-5 {
+  width: 41.66667%;
+  margin-left: 41.66667%; }
+.list__item--6--offset-5 {
+  width: 50%;
+  margin-left: 41.66667%; }
+.list__item--7--offset-5 {
+  width: 58.33333%;
+  margin-left: 41.66667%; }
+.list__item--8--offset-5 {
+  width: 66.66667%;
+  margin-left: 41.66667%; }
+.list__item--9--offset-5 {
+  width: 75%;
+  margin-left: 41.66667%; }
+.list__item--10--offset-5 {
+  width: 83.33333%;
+  margin-left: 41.66667%; }
+.list__item--11--offset-5 {
+  width: 91.66667%;
+  margin-left: 41.66667%; }
+.list__item--6 {
+  width: 50%; }
+.list__item--offset-6 {
+  margin-left: 50%; }
+.list__item--1--offset-6 {
+  width: 8.33333%;
+  margin-left: 50%; }
+.list__item--2--offset-6 {
+  width: 16.66667%;
+  margin-left: 50%; }
+.list__item--3--offset-6 {
+  width: 25%;
+  margin-left: 50%; }
+.list__item--4--offset-6 {
+  width: 33.33333%;
+  margin-left: 50%; }
+.list__item--5--offset-6 {
+  width: 41.66667%;
+  margin-left: 50%; }
+.list__item--6--offset-6 {
+  width: 50%;
+  margin-left: 50%; }
+.list__item--7--offset-6 {
+  width: 58.33333%;
+  margin-left: 50%; }
+.list__item--8--offset-6 {
+  width: 66.66667%;
+  margin-left: 50%; }
+.list__item--9--offset-6 {
+  width: 75%;
+  margin-left: 50%; }
+.list__item--10--offset-6 {
+  width: 83.33333%;
+  margin-left: 50%; }
+.list__item--11--offset-6 {
+  width: 91.66667%;
+  margin-left: 50%; }
+.list__item--7 {
+  width: 58.33333%; }
+.list__item--offset-7 {
+  margin-left: 58.33333%; }
+.list__item--1--offset-7 {
+  width: 8.33333%;
+  margin-left: 58.33333%; }
+.list__item--2--offset-7 {
+  width: 16.66667%;
+  margin-left: 58.33333%; }
+.list__item--3--offset-7 {
+  width: 25%;
+  margin-left: 58.33333%; }
+.list__item--4--offset-7 {
+  width: 33.33333%;
+  margin-left: 58.33333%; }
+.list__item--5--offset-7 {
+  width: 41.66667%;
+  margin-left: 58.33333%; }
+.list__item--6--offset-7 {
+  width: 50%;
+  margin-left: 58.33333%; }
+.list__item--7--offset-7 {
+  width: 58.33333%;
+  margin-left: 58.33333%; }
+.list__item--8--offset-7 {
+  width: 66.66667%;
+  margin-left: 58.33333%; }
+.list__item--9--offset-7 {
+  width: 75%;
+  margin-left: 58.33333%; }
+.list__item--10--offset-7 {
+  width: 83.33333%;
+  margin-left: 58.33333%; }
+.list__item--11--offset-7 {
+  width: 91.66667%;
+  margin-left: 58.33333%; }
+.list__item--8 {
+  width: 66.66667%; }
+.list__item--offset-8 {
+  margin-left: 66.66667%; }
+.list__item--1--offset-8 {
+  width: 8.33333%;
+  margin-left: 66.66667%; }
+.list__item--2--offset-8 {
+  width: 16.66667%;
+  margin-left: 66.66667%; }
+.list__item--3--offset-8 {
+  width: 25%;
+  margin-left: 66.66667%; }
+.list__item--4--offset-8 {
+  width: 33.33333%;
+  margin-left: 66.66667%; }
+.list__item--5--offset-8 {
+  width: 41.66667%;
+  margin-left: 66.66667%; }
+.list__item--6--offset-8 {
+  width: 50%;
+  margin-left: 66.66667%; }
+.list__item--7--offset-8 {
+  width: 58.33333%;
+  margin-left: 66.66667%; }
+.list__item--8--offset-8 {
+  width: 66.66667%;
+  margin-left: 66.66667%; }
+.list__item--9--offset-8 {
+  width: 75%;
+  margin-left: 66.66667%; }
+.list__item--10--offset-8 {
+  width: 83.33333%;
+  margin-left: 66.66667%; }
+.list__item--11--offset-8 {
+  width: 91.66667%;
+  margin-left: 66.66667%; }
+.list__item--9 {
+  width: 75%; }
+.list__item--offset-9 {
+  margin-left: 75%; }
+.list__item--1--offset-9 {
+  width: 8.33333%;
+  margin-left: 75%; }
+.list__item--2--offset-9 {
+  width: 16.66667%;
+  margin-left: 75%; }
+.list__item--3--offset-9 {
+  width: 25%;
+  margin-left: 75%; }
+.list__item--4--offset-9 {
+  width: 33.33333%;
+  margin-left: 75%; }
+.list__item--5--offset-9 {
+  width: 41.66667%;
+  margin-left: 75%; }
+.list__item--6--offset-9 {
+  width: 50%;
+  margin-left: 75%; }
+.list__item--7--offset-9 {
+  width: 58.33333%;
+  margin-left: 75%; }
+.list__item--8--offset-9 {
+  width: 66.66667%;
+  margin-left: 75%; }
+.list__item--9--offset-9 {
+  width: 75%;
+  margin-left: 75%; }
+.list__item--10--offset-9 {
+  width: 83.33333%;
+  margin-left: 75%; }
+.list__item--11--offset-9 {
+  width: 91.66667%;
+  margin-left: 75%; }
+.list__item--10 {
+  width: 83.33333%; }
+.list__item--offset-10 {
+  margin-left: 83.33333%; }
+.list__item--1--offset-10 {
+  width: 8.33333%;
+  margin-left: 83.33333%; }
+.list__item--2--offset-10 {
+  width: 16.66667%;
+  margin-left: 83.33333%; }
+.list__item--3--offset-10 {
+  width: 25%;
+  margin-left: 83.33333%; }
+.list__item--4--offset-10 {
+  width: 33.33333%;
+  margin-left: 83.33333%; }
+.list__item--5--offset-10 {
+  width: 41.66667%;
+  margin-left: 83.33333%; }
+.list__item--6--offset-10 {
+  width: 50%;
+  margin-left: 83.33333%; }
+.list__item--7--offset-10 {
+  width: 58.33333%;
+  margin-left: 83.33333%; }
+.list__item--8--offset-10 {
+  width: 66.66667%;
+  margin-left: 83.33333%; }
+.list__item--9--offset-10 {
+  width: 75%;
+  margin-left: 83.33333%; }
+.list__item--10--offset-10 {
+  width: 83.33333%;
+  margin-left: 83.33333%; }
+.list__item--11--offset-10 {
+  width: 91.66667%;
+  margin-left: 83.33333%; }
+.list__item--11 {
+  width: 91.66667%; }
+.list__item--offset-11 {
+  margin-left: 91.66667%; }
+.list__item--1--offset-11 {
+  width: 8.33333%;
+  margin-left: 91.66667%; }
+.list__item--2--offset-11 {
+  width: 16.66667%;
+  margin-left: 91.66667%; }
+.list__item--3--offset-11 {
+  width: 25%;
+  margin-left: 91.66667%; }
+.list__item--4--offset-11 {
+  width: 33.33333%;
+  margin-left: 91.66667%; }
+.list__item--5--offset-11 {
+  width: 41.66667%;
+  margin-left: 91.66667%; }
+.list__item--6--offset-11 {
+  width: 50%;
+  margin-left: 91.66667%; }
+.list__item--7--offset-11 {
+  width: 58.33333%;
+  margin-left: 91.66667%; }
+.list__item--8--offset-11 {
+  width: 66.66667%;
+  margin-left: 91.66667%; }
+.list__item--9--offset-11 {
+  width: 75%;
+  margin-left: 91.66667%; }
+.list__item--10--offset-11 {
+  width: 83.33333%;
+  margin-left: 91.66667%; }
+.list__item--11--offset-11 {
+  width: 91.66667%;
+  margin-left: 91.66667%; }
+.list__item--12 {
+  width: 100%; }
