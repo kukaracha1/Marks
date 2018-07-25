@@ -74,6 +74,30 @@ body {
     padding-bottom: 35px; }
     body > main .funnel__title {
       text-align: left; }
+    body > main .funnel__list {
+      width: 47.05%; }
+      body > main .funnel__list__item {
+        width: 100%;
+        min-height: 104px;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        justify-content: center;
+        flex-direction: column; }
+        body > main .funnel__list__item:last-child {
+          border-color: transparent; }
+        body > main .funnel__list__item .title {
+          margin-bottom: 17px; }
+        body > main .funnel__list__item .desc {
+          color: #949193;
+          font-size: 0.813em;
+          font-weight: 300; }
+        body > main .funnel__list__item .result {
+          display: none; }
+    body > main .funnel__img {
+      position: relative;
+      top: -22.5px;
+      width: 52.95%; }
   body > main .when {
     min-height: 671px;
     background-color: #281922; }
@@ -81,7 +105,9 @@ body {
       min-height: 200px;
       margin-bottom: 50px; }
       body > main .when__item__icon {
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        width: 102px;
+        height: 102px; }
   body > main .services {
     min-height: 1269px;
     background-color: #7f222e; }
@@ -103,6 +129,8 @@ body {
       body > main .services__item__label {
         /*  SEEMS WEIRD -> SHOULD BE CHANGED    */ }
         body > main .services__item__label .label__icon {
+          width: 102px;
+          height: 102px;
           border: 1px solid #fff;
           border-radius: 50%; }
         body > main .services__item__label .label__price-wrap {
@@ -208,7 +236,34 @@ body {
       margin-top: 20px; }
   body > main .contacts {
     min-height: 686px;
-    background: url("../img/form-bkg.jpg") #1d191d no-repeat bottom right; }
+    background: url("../img/form-bkg.jpg") #1d191d no-repeat bottom right;
+    position: relative; }
+    body > main .contacts-wrap.popup {
+      background-color: rgba(255, 255, 255, 0.3);
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 213px 85px 85px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: scroll;
+      height: 100%; }
+      body > main .contacts-wrap.popup .close {
+        display: initial; }
+    body > main .contacts .close {
+      display: none;
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      top: 35px;
+      right: 2.91667%;
+      background: url("../img/close.png") no-repeat center center;
+      transition: transform 0.3s linear; }
+      body > main .contacts .close, body > main .contacts .close:hover {
+        border: 0;
+        outline: 0; }
+      body > main .contacts .close:hover {
+        transform: rotate(90deg); }
     body > main .contacts .form__input, body > main .contacts .form__msg, body > main .contacts .form__submit {
       border: 0;
       outline: 0; }
