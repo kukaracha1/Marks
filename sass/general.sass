@@ -1,6 +1,6 @@
 $gridSize: 12 !default
 $sectPadTB: 64px
-$sectPadLR: 85px
+$sectPadLR: 85 / 1366 * 100%
 /*  common styles   */
 
 @font-face
@@ -50,7 +50,7 @@ body
         margin: 0
         letter-spacing: -0.024Em
         line-height: 1.19
-        margin-left: 8px
+        margin-left: 0.79155%
     h2
         font-size: 3.6em
         letter-spacing: -0.017em
@@ -89,6 +89,18 @@ body
 
 .visible
     opacity: 1
+
+.underline
+    &:before
+        content: ''
+        display: block
+        width: 100%
+        position: absolute
+        bottom: 0
+    &--right:before
+        left: $sectPadLR
+    &--left:before
+        left: -$sectPadLR
 
 
 [class^='sect--'],

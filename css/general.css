@@ -44,7 +44,7 @@ body {
     margin: 0;
     letter-spacing: -0.024Em;
     line-height: 1.19;
-    margin-left: 8px; }
+    margin-left: 0.79155%; }
   body h2 {
     font-size: 3.6em;
     letter-spacing: -0.017em;
@@ -84,9 +84,20 @@ body {
 .visible {
   opacity: 1; }
 
+.underline:before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+.underline--right:before {
+  left: 6.22255%; }
+.underline--left:before {
+  left: -6.22255%; }
+
 .sect, [class^='sect--'],
 [class*=' sect--'] {
-  padding: 64px 85px 0;
+  padding: 64px 6.22255% 0;
   box-sizing: border-box; }
   .sect__title {
     text-align: center;
