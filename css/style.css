@@ -65,7 +65,8 @@ body {
       body > main .info__more p {
         font-size: 0.75em;
         letter-spacing: 0.12em;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        line-height: 1; }
       body > main .info__more .icon__next {
         background: url("../img/arrow.png") no-repeat center center;
         width: 8px;
@@ -158,7 +159,7 @@ body {
             background-position: center center;
             height: 40px;
             position: relative;
-            bottom: 33px; }
+            bottom: 36px; }
             body > main .services__item__label .label__price-wrap.price--1 {
               background-image: url(../img/services/price_with_label_1.png); }
             body > main .services__item__label .label__price-wrap.price--2 {
@@ -173,7 +174,7 @@ body {
         width: 52.4%; }
         body > main .services__item__text header {
           text-transform: uppercase; }
-          body > main .services__item__text header p {
+          body > main .services__item__text header h6 {
             letter-spacing: 0.1em;
             margin-bottom: 18px; }
         body > main .services__item__text ul {
@@ -312,11 +313,11 @@ body {
     body > main .contacts .form__input, body > main .contacts .form__msg, body > main .contacts .form__submit {
       border: 0; }
     body > main .contacts .form__input, body > main .contacts .form__msg {
-      margin-bottom: 30px;
       padding: 17px;
       color: rgba(0, 0, 0, 0.5);
       box-sizing: border-box; }
     body > main .contacts .form__input {
+      margin-bottom: 30px;
       float: left;
       width: 48.54369%;
       height: 50px;
@@ -329,7 +330,8 @@ body {
           color: rgba(255, 29, 56, 0.78); }
     body > main .contacts .form__msg {
       width: 100%;
-      height: 200px; }
+      height: 200px;
+      margin-bottom: 27px; }
     body > main .contacts .form__submit {
       background-color: #892531;
       width: 270px;
@@ -338,15 +340,15 @@ body {
       font-size: 1.2em; }
   body > footer {
     min-height: 143px;
-    padding: 32px 85px;
+    padding: 44px 85px;
     box-sizing: border-box; }
     body > footer a {
       border-bottom: 1px solid transparent;
       font-size: 1.063em; }
       body > footer a:hover {
         border-bottom: 1px solid #622427; }
-    body > footer .left-side .address {
-      letter-spacing: 0; }
     body > footer .left-side a {
       display: block;
       letter-spacing: -0.01em; }
+    body > footer .address {
+      letter-spacing: 0; }
