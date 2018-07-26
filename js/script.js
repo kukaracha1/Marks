@@ -73,6 +73,7 @@ $(function () {
     window.onscroll = function () {
         headerCheck()
     };
+
     function headerCheck() {
         if (window.pageYOffset > headerEvent) {
             $('body > header').addClass('fixed');
@@ -81,5 +82,9 @@ $(function () {
         }
     }
     // --------------END HEADER FIXED-----------
+
+    // ------------FORM VALIDATE-------------
+    $("#phone").attr('type','text').mask("8(999) 999-9999");
+    // ------------END FORM VALIDATE-------------
 
 })

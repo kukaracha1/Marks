@@ -233,12 +233,12 @@
                 </header>
                 <form action="" class="contacts__form">
                     <div class="form__input-wrap clr">
-                        <input class="form__input" type="text" placeholder="Ваше имя *" required>
-                        <input class="form__input" type="text" placeholder="Бюджет">
-                        <input class="form__input invalid" type="text" placeholder="Контактный телефон *" required>
-                        <input class="form__input" type="text" placeholder="Email">
+                        <input class="form__input" type="text" placeholder="Ваше имя *"  name="name" id="name" required>
+                        <input class="form__input" type="text" placeholder="Бюджет" name="budget" id="budget" >
+                        <input class="form__input" type="number" placeholder="Контактный телефон *"  name="phone" id="phone" required>
+                        <input class="form__input" type="email" placeholder="Email" name="mail" id="mail" >
                     </div>
-                    <textarea class="form__msg" name="" id="" placeholder="Детали проекта *" required></textarea>
+                    <textarea class="form__msg" name="details" id="details" placeholder="Детали проекта *" required></textarea>
                     <input class="form__submit" type="submit" value="Отправить">
                 </form>
             </section>
@@ -253,6 +253,8 @@
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.viewportchecker.min.js"></script>
+    
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
