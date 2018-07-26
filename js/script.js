@@ -69,6 +69,8 @@ $(function () {
 
     // --------------HEADER FIXED-----------
     var headerEvent = $('body > header .logo').offset().top;
+    headerEvent += 20;  //
+
     headerCheck();
     window.onscroll = function () {
         headerCheck()

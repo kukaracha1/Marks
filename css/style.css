@@ -10,6 +10,8 @@ body {
     background: url("../img/bkg.jpg") #c63245 no-repeat;
     /* SHOULD CHECK IF ITS GOOD FOR IE 10 */
     background-blend-mode: darken;
+    background-size: cover;
+    background-position: center center;
     height: 768px;
     position: absolute;
     top: 0;
@@ -30,7 +32,7 @@ body {
       padding-top: 25px;
       z-index: 99; }
     body > header .start {
-      width: 270px;
+      width: 23.077%;
       height: 60px;
       box-sizing: border-box;
       background-color: #ffffff;
@@ -48,6 +50,15 @@ body {
       font-size: 1.775em;
       font-weight: 300;
       line-height: 1.2; }
+  body > main:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 768px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
   body > main .info {
     min-height: 474px;
     padding-top: 91px;
@@ -80,7 +91,10 @@ body {
     body > main .funnel__title {
       text-align: left; }
     body > main .funnel__list {
-      width: 47.85%; }
+      padding: 22px 0 50px;
+      width: 48.85%; }
+      body > main .funnel__list-wrap {
+        background: url("../img/funnel-with-text.png") no-repeat right top; }
       body > main .funnel__list__item {
         width: 100%;
         min-height: 104px;
@@ -102,8 +116,11 @@ body {
           margin-top: 14px;
           margin-bottom: 6px; }
         body > main .funnel__list__item .result {
-          display: none; }
+          display: none;
+          text-align: right;
+          margin-top: 14px; }
     body > main .funnel__img {
+      display: none;
       position: relative;
       top: -22.5px;
       width: 52.15%; }
@@ -196,7 +213,7 @@ body {
       margin-bottom: 13px; }
       body > main .cases__title h2 {
         display: inline;
-        padding: 0 25px;
+        padding: 0 2.5%;
         background: #281922; }
     body > main .cases__list--wrap {
       border: 3px solid #382631;
