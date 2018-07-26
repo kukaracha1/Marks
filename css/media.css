@@ -66,6 +66,8 @@
       width: 100%; }
       body main .funnel__list__item .result {
         display: initial; }
+      body main .funnel__list-wrap {
+        background-image: none; }
     body main .funnel__img {
       display: none; }
     body main .when__item {
@@ -84,13 +86,20 @@
     body main .cases__item {
       padding-top: 20px;
       padding-bottom: 20px; }
-    body main .contacts .form__input {
-      width: 100%;
-      height: 35px;
-      margin-right: 0;
-      margin-bottom: 20px; }
-    body main .contacts .form__submit {
-      width: 50%; }
+    body main .contacts {
+      padding-top: 10px; }
+      body main .contacts .form__input {
+        width: 100%;
+        height: 35px;
+        margin-right: 0;
+        margin-bottom: 20px; }
+      body main .contacts .form__submit {
+        width: 50%; }
+      body main .contacts .form .close {
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        right: 6.22255%; }
     body footer .left-side {
       margin-bottom: 20px; }
 

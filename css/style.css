@@ -317,7 +317,8 @@ body {
         transform: rotate(90deg); }
     body > main .contacts__title {
       margin-top: 1px;
-      margin-bottom: 45px; }
+      margin-bottom: 45px;
+      padding: 0 11%; }
     body > main .contacts .form__input, body > main .contacts .form__msg, body > main .contacts .form__submit {
       border: 0; }
     body > main .contacts .form__input, body > main .contacts .form__msg {
