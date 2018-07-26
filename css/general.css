@@ -50,6 +50,20 @@ body {
     letter-spacing: -0.017em;
     font-weight: 100;
     margin: 0; }
+  body input:not([type=submit]), body textarea,
+  body button, body input[type=submit] {
+    transition-duration: 0.1s;
+    transition-timing-function: linear; }
+  body button:not(.close), body input[type=submit] {
+    transition-property: background-color, color; }
+    body button:not(.close):hover, body input[type=submit]:hover {
+      background-color: #e73d34 !important;
+      color: #fff !important; }
+  body input:not([type=submit]), body textarea {
+    transition-property: outline-color;
+    outline: 2px solid transparent; }
+    body input:not([type=submit]):hover, body input:not([type=submit]):focus, body textarea:hover, body textarea:focus {
+      outline-color: rgba(0, 0, 0, 0.5) !important; }
 
 .clr::after {
   content: "";

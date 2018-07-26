@@ -60,7 +60,8 @@ body {
       margin-top: 35px;
       display: inline-block; }
       body > main .info__more:hover {
-        color: rgba(255, 255, 255, 0.8); }
+        color: rgba(255, 255, 255, 0.8);
+        cursor: pointer; }
       body > main .info__more p {
         font-size: 0.75em;
         letter-spacing: 0.12em;
@@ -299,7 +300,7 @@ body {
       top: 35px;
       right: 2.91667%;
       background: url("../img/close.png") no-repeat center center;
-      transition: transform 0.3s linear; }
+      transition: transform 0.1s linear; }
       body > main .contacts .close, body > main .contacts .close:hover {
         border: 0;
         outline: 0; }
@@ -309,8 +310,7 @@ body {
       margin-top: 1px;
       margin-bottom: 45px; }
     body > main .contacts .form__input, body > main .contacts .form__msg, body > main .contacts .form__submit {
-      border: 0;
-      outline: 0; }
+      border: 0; }
     body > main .contacts .form__input, body > main .contacts .form__msg {
       margin-bottom: 30px;
       padding: 17px;

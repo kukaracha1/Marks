@@ -56,7 +56,20 @@ body
         letter-spacing: -0.017em
         font-weight: 100
         margin: 0
-    
+    input:not([type=submit]),textarea,
+    button, input[type=submit]
+        transition-duration: 0.1s
+        transition-timing-function: linear
+    button:not(.close), input[type=submit]
+        transition-property: background-color, color
+        &:hover
+            background-color: #e73d34!important
+            color: #fff!important
+    input:not([type=submit]),textarea
+        transition-property: outline-color
+        outline: 2px solid transparent
+        &:hover, &:focus
+            outline-color: rgba(0, 0, 0, 0.5)!important
 .clr::after
     content :   ''
     clear: both
