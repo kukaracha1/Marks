@@ -31,21 +31,39 @@ $(function () {
     // ---------END DEBUG---------
 
 
+    // -------------POPUP-----------
     function showPopup(params) {
         $('.contacts-wrap').addClass('popup');
-        
     }
 
-    $('.show-form').click( function(e) {
+    $('.show-form').click(function (e) {
         e.preventDefault();
         showPopup();
     });
 
-    $('.close').click( function(e) {
+    $('.close').click(function (e) {
         e.preventDefault();
         $('.contacts-wrap').removeClass('popup');
-        
     })
+    // -------------END POPUP-----------
 
+    // ---------------SMOOTH SCROLL-----------
+    $('.when__item, .cases__item').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 100,
+        repeat: true
+    });
+    // ---------------END SMOOTH SCROLL-----------
+
+    // --------------HEADER FIXED-----------
+    var headerEvent = $('body > header .logo').offset().top;
+    window.onscroll = function () {
+        if (window.pageYOffset > headerEvent) {
+           $('body > header').addClass("fixed");
+        } else {
+            $('body > header').removeClass("fixed");
+        }
+    }
+    // --------------END HEADER FIXED-----------
 
 })

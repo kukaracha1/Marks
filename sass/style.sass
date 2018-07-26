@@ -28,11 +28,13 @@ body
             top: 0
             left: 0
             position: absolute
+            transition: background-color 0.1s linear
 
             &.fixed
                 background-color: #1d191d
                 position: fixed
                 padding-top: 25px
+                z-index: 99
             .start
                 width: 270px
                 height: 60px
@@ -160,8 +162,11 @@ body
                                 border: 1px solid #fff
                                 border-radius: 50%
                             &__price
+                                display: none
                                 &-wrap
-                                    background: url(../img/services/price_label.png)
+                                    @for $i from 1 through 3
+                                        &.price--#{$i}
+                                            background-image: url(../img/services/price_with_label_#{$i}.png)
                                     background-repeat: no-repeat
                                     background-position: center center
                                     height: 40px
@@ -326,6 +331,7 @@ body
                         margin-bottom: 30px
                         padding: 17px
                         color:  rgba(0, 0, 0, 0.5)
+                        box-sizing: border-box
                     &__input
                         float: left
                         width: 500 / 1030 * 100%

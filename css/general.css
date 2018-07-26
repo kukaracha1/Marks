@@ -54,6 +54,12 @@ body {
 .fright {
   float: right; }
 
+.hidden {
+  opacity: 0; }
+
+.visible {
+  opacity: 1; }
+
 .sect, [class^='sect--'],
 [class*=' sect--'] {
   padding: 64px 85px 0;
