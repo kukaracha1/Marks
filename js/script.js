@@ -47,21 +47,37 @@ $(function () {
     })
     // -------------END POPUP-----------
 
-    // ---------------SMOOTH SCROLL-----------
-    $('.when__item, .cases__item').addClass("hidden").viewportChecker({
+    // ------------SCROLL ON CLICK---------
+    $('.info__more').click(function () {
+        $('body > header').addClass('fixed');
+
+        var offset = $('.funnel').offset().top - $('body>header').outerHeight();
+        $('html,body').animate({
+                scrollTop: offset
+            },
+            'slow');
+    });
+    // ------------END SCROLL ON CLICK---------
+
+    // ---------------SMOOTH SHOW ON SCROLL-----------
+    $('.when__item, .cases__item').addClass('hidden').viewportChecker({
         classToAdd: 'visible animated fadeIn',
         offset: 100,
         repeat: true
     });
-    // ---------------END SMOOTH SCROLL-----------
+    // ---------------END SMOOTH SHOW ON SCROLL-----------
 
     // --------------HEADER FIXED-----------
     var headerEvent = $('body > header .logo').offset().top;
+    headerCheck();
     window.onscroll = function () {
+        headerCheck()
+    };
+    function headerCheck() {
         if (window.pageYOffset > headerEvent) {
-           $('body > header').addClass("fixed");
+            $('body > header').addClass('fixed');
         } else {
-            $('body > header').removeClass("fixed");
+            $('body > header').removeClass('fixed');
         }
     }
     // --------------END HEADER FIXED-----------

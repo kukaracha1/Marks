@@ -57,11 +57,20 @@ body {
       padding: 32px 20px;
       margin: 0; }
     body > main .info__more {
-      padding-top: 35px; }
+      margin-top: 35px;
+      display: inline-block; }
+      body > main .info__more:hover {
+        color: rgba(255, 255, 255, 0.8); }
       body > main .info__more p {
         font-size: 0.75em;
         letter-spacing: 0.12em;
         text-transform: uppercase; }
+      body > main .info__more .icon__next {
+        background: url("../img/arrow.png") no-repeat center center;
+        width: 8px;
+        height: 4px;
+        display: block;
+        margin: 15px auto 0; }
   body > main .funnel {
     min-height: 791px;
     background-color: #524199;
@@ -277,7 +286,9 @@ body {
       width: 100%;
       box-sizing: border-box;
       overflow: scroll;
-      height: 100%; }
+      height: 100%;
+      opacity: 1;
+      animation: popup--show 1s; }
       body > main .contacts-wrap.popup .close {
         display: initial; }
     body > main .contacts .close {

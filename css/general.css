@@ -11,6 +11,16 @@
   font-family: Roboto;
   font-weight: 900;
   src: url("../fonts/Roboto-Bold.ttf"); }
+@keyframes popup--show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes popup--hide {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 body {
   /*  GENERAL FONT */
   font-family: "Roboto", "Myriad Pro", sans-serif;
