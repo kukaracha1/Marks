@@ -44,10 +44,10 @@ $(function () {
     // -------------END POPUP-----------
 
     // ------------SCROLL ON CLICK---------
-    $('.info__more').click(function () {
-        $('body > header').addClass('fixed');
+    $('.more').click(function () {
+        $('.header').addClass('fixed');
 
-        var offset = $('.funnel').offset().top - $('body>header').outerHeight();
+        var offset = $('.funnel').offset().top - $('.header').outerHeight();
         $('html,body').animate({
                 scrollTop: offset
             },
@@ -64,7 +64,7 @@ $(function () {
     // ---------------END SMOOTH SHOW ON SCROLL-----------
 
     // --------------HEADER FIXED-----------
-    var headerEvent = $('body > header .logo').offset().top;
+    var headerEvent = $('.header__logo').offset().top;
     headerEvent += 20;  //
 
     headerCheck();
@@ -74,9 +74,9 @@ $(function () {
 
     function headerCheck() {
         if (window.pageYOffset > headerEvent) {
-            $('body > header').addClass('fixed');
+            $('.header').addClass('fixed');
         } else {
-            $('body > header').removeClass('fixed');
+            $('.header').removeClass('fixed');
         }
     }
     // --------------END HEADER FIXED-----------

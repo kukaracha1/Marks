@@ -1,6 +1,6 @@
 $gridSize: 12 !default
 $sectPadTB: 64px
-$sectPadLR: 85 / 1366 * 100%
+$sectPadLR: 95.62 / 1366 * 100%
 /*  common styles   */
 
 @font-face
@@ -16,12 +16,12 @@ $sectPadLR: 85 / 1366 * 100%
     font-weight: 900
     src: url('../fonts/Roboto-Bold.ttf')
 
-@keyframes popup--show
+@keyframes popup_show
     0%
         opacity: 0
     100%
         opacity: 1
-@keyframes popup--hide
+@keyframes popup_hide
     0%
         opacity: 1
     100%
@@ -37,43 +37,47 @@ body
     font-size: 16px
     line-height: 1
     color: #fff
-    p,h6,a
-        font-size: 1.089em
-        font-weight: 300
-        line-height: 1.647
-        letter-spacing: -0.005em
-        margin: 0
-    a
-        color: #fff
-        &,&:visited,&:focus
-            text-decoration: none
-    h1
-        font-size: 4.3em
-        font-weight: 100
-        margin: 0
-        letter-spacing: -0.024Em
-        line-height: 1.19
-        margin-left: 0.79155%
-    h2
-        font-size: 3.6em
-        letter-spacing: -0.017em
-        font-weight: 100
-        margin: 0
-    input:not([type=submit]),textarea,
-    button, input[type=submit]
-        transition-duration: 0.1s
-        transition-timing-function: linear
-    button:not(.close-form), input[type=submit]
-        transition-property: background-color, color
-        height: 60px
-        &:hover
-            background-color: #e73d34!important
-            color: #fff!important
-    input:not([type=submit]),textarea
-        transition-property: outline-color
-        outline: 2px solid transparent
-        &:hover, &:focus
-            outline-color: rgba(0, 0, 0, 0.5)!important
+p,h6,a
+    font-size: 1.089em
+    font-weight: 300
+    line-height: 1.647
+    letter-spacing: -0.005em
+    margin: 0
+a
+    color: #fff
+    &,&:visited,&:focus
+        text-decoration: none
+h1
+    font-size: 4.3em
+    font-weight: 100
+    margin: 0
+    letter-spacing: -0.024Em
+    line-height: 1.19
+    margin-left: 0.79155%
+h2
+    font-size: 3.6em
+    letter-spacing: -0.017em
+    font-weight: 100
+    margin: 0
+.button, .input
+    transition-duration: 0.1s
+    transition-timing-function: linear
+.button
+    transition-property: background-color, color
+    height: 60px
+    border-style: solid
+    font-weight: 300
+    &_round
+        border-radius: 60px
+    &:hover
+        background-color: #e73d34!important
+        color: #fff!important
+.input
+    transition-property: outline-color
+    outline: 2px solid transparent
+    &:hover, &:focus
+        outline-color: rgba(0, 0, 0, 0.5)!important
+
 .clr::after
     content :   ''
     clear: both
@@ -83,17 +87,12 @@ body
 
 .fleft 
     float: left
-
-
 .fright 
     float: right
-
 .hidden
     opacity: 0
-
 .visible
     opacity: 1
-
 .underline
     &:before
         content: ''
@@ -101,15 +100,15 @@ body
         width: 100%
         position: absolute
         bottom: 0
-    &--right:before
+    &_right:before
         left: $sectPadLR
-    &--left:before
+    &_left:before
         left: -$sectPadLR
 
 
-[class^='sect--'],
-[class*=' sect--']
-    @extend .sect
+// [class^='sect_'],
+// [class*=' sect_']
+//     @extend .sect
 .sect
     padding: $sectPadTB $sectPadLR 0
     box-sizing: border-box
@@ -118,20 +117,20 @@ body
     &__title
         text-align: center
         margin: 0 0 42px
-    &--no-pad
+    &_no-pad
         padding-left: 0
         padding-right: 0
 
 /*  LIKE GRID   */
-[class^='list--'],
-[class*=' list--']
-    @extend .list
+// [class^='list_'],
+// [class*=' list_']
+//     @extend .list
 .list
     width: 100%
     > *
         float: left
         text-align: center
-    &--l
+    &_al
         > *
             text-align: left
     &::after
@@ -143,18 +142,46 @@ body
 
 .list__item
     @for $i from 1 to $gridSize
-        &--#{$i}
+        &_#{$i}
             width: $i / $gridSize * 100%
-        &--offset-#{$i}
+        &_offset-#{$i}
             margin-left: $i / $gridSize * 100%
         @for $j from 1 to $gridSize
-            &--#{$j}--offset-#{$i}
+            &_#{$j}_offset-#{$i}
                 width: $j / $gridSize * 100%
                 margin-left: $i / $gridSize * 100%
-    &--#{$gridSize}
+    &_#{$gridSize}
         width: 100%
         
 // its not working
-// [class^='list__item--'],
-// [class*=' list__item--']
+// [class^='list__item_'],
+// [class*=' list__item_']
 //     @extend .list__item
+
+
+.more
+    margin-top: 35px
+    display: inline-block
+    &:hover
+        color: rgba(255,255,255,0.8)
+        cursor: pointer
+    &__text
+        font-size: 0.75em
+        letter-spacing: 0.12em
+        text-transform: uppercase
+        line-height: 1
+    // will be svg
+    &__next
+        background: url("../img/arrow.png") no-repeat center center
+        width: 8px
+        height: 4px
+        display: block
+        margin: 15px auto 0
+.ul
+    margin: 0
+    padding: 0 40px
+    list-style-image: url('../img/services/list-image.png')
+    &__li
+        margin-top: 16.5px
+        font-size: 1.1em
+        line-height: 1.647
