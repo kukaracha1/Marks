@@ -32,18 +32,14 @@ $(function () {
 
 
     // -------------POPUP-----------
-    function showPopup(params) {
-        $('.contacts-wrap').addClass('popup');
-    }
-
     $('.show-form').click(function (e) {
         e.preventDefault();
-        showPopup();
+        $('.contacts-wrap, body').addClass('popup');
     });
 
-    $('.close').click(function (e) {
+    $('.close-form').click(function (e) {
         e.preventDefault();
-        $('.contacts-wrap').removeClass('popup');
+        $('.contacts-wrap, body').removeClass('popup');
     })
     // -------------END POPUP-----------
 

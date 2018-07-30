@@ -22,6 +22,8 @@
   100% {
     opacity: 0; } }
 body {
+  max-width: 1366px;
+  margin: 0 auto;
   /*  GENERAL FONT */
   font-family: "Roboto", "Myriad Pro", sans-serif;
   font-weight: lighter;
@@ -54,10 +56,10 @@ body {
   body button, body input[type=submit] {
     transition-duration: 0.1s;
     transition-timing-function: linear; }
-  body button:not(.close), body input[type=submit] {
+  body button:not(.close-form), body input[type=submit] {
     transition-property: background-color, color;
     height: 60px; }
-    body button:not(.close):hover, body input[type=submit]:hover {
+    body button:not(.close-form):hover, body input[type=submit]:hover {
       background-color: #e73d34 !important;
       color: #fff !important; }
   body input:not([type=submit]), body textarea {
@@ -99,7 +101,9 @@ body {
 .sect, [class^='sect--'],
 [class*=' sect--'] {
   padding: 64px 6.22255% 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto; }
   .sect__title {
     text-align: center;
     margin: 0 0 42px; }

@@ -1,8 +1,9 @@
 body {
   background-color: #281922;
   padding: 181px 6.07613% 0;
-  margin: 0;
   /*  MARKS BKG  */ }
+  body.popup {
+    overflow: hidden; }
   body:before {
     width: 100%;
     content: "";
@@ -87,17 +88,18 @@ body {
   body > main .funnel {
     min-height: 791px;
     background-color: #524199;
-    padding-bottom: 16px; }
+    padding-bottom: 16px;
+    padding-left: 7%;
+    padding-right: 7%; }
     body > main .funnel__title {
-      text-align: left; }
+      text-align: left;
+      margin-bottom: 21px; }
     body > main .funnel__list {
       padding: 22px 0 50px;
-      width: 48.85%; }
-      body > main .funnel__list-wrap {
-        background: url("../img/funnel-with-text.png") no-repeat right top; }
+      width: 48%; }
       body > main .funnel__list__item {
         width: 100%;
-        min-height: 104px;
+        height: 104px;
         box-sizing: border-box;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         display: flex;
@@ -120,10 +122,9 @@ body {
           text-align: right;
           margin-top: 14px; }
     body > main .funnel__img {
-      display: none;
       position: relative;
-      top: -22.5px;
-      width: 52.15%; }
+      width: 52%;
+      height: 612.56px; }
   body > main .when {
     min-height: 671px;
     background-color: #281922;
@@ -240,7 +241,7 @@ body {
           align-items: center; }
       body > main .cases__item__title {
         font-weight: 300;
-        margin-bottom: 6px;
+        margin-bottom: 7px;
         min-height: 74px; }
         body > main .cases__item__title .name {
           text-transform: uppercase; }
@@ -258,29 +259,29 @@ body {
         border-right-width: 0;
         border-color: #892531;
         border-style: solid;
-        width: 63.465%;
+        width: 64%;
         height: 36px;
         color: #fafafa;
         font-size: 1.35em;
         font-weight: 300;
         line-height: 1.6;
         text-transform: uppercase;
-        letter-spacing: 0.04em; }
+        letter-spacing: 0.04em;
+        overflow: hidden; }
         body > main .cases__item__percents:after, body > main .cases__item__percents:before {
           content: "";
-          width: 30px;
-          height: 30px;
+          width: 36px;
+          height: 36px;
           position: absolute;
-          top: 5px;
           box-sizing: border-box;
           border-right: 2px solid #892531;
           border-top: 2px solid #892531; }
         body > main .cases__item__percents:before {
-          left: -15px;
-          transform: rotate(45deg); }
+          left: -24px;
+          transform: rotate(45deg) skew(15deg, 15deg); }
         body > main .cases__item__percents:after {
-          right: -15px;
-          transform: rotate(-135deg); }
+          right: -24px;
+          transform: rotate(-135deg) skew(15deg, 15deg); }
       body > main .cases__item__result {
         margin-top: 13px; }
   body > main .contacts {
@@ -292,16 +293,17 @@ body {
       position: fixed;
       top: 0;
       left: 0;
-      padding: 213px 6.07613%;
+      z-index: 100;
+      padding: 100px 6.07613%;
       width: 100%;
       box-sizing: border-box;
       overflow: scroll;
       height: 100%;
       opacity: 1;
       animation: popup--show 1s; }
-      body > main .contacts-wrap.popup .close {
+      body > main .contacts-wrap.popup .close-form {
         display: initial; }
-    body > main .contacts .close {
+    body > main .contacts .close-form {
       display: none;
       position: absolute;
       width: 35px;
@@ -310,10 +312,10 @@ body {
       right: 2.91667%;
       background: url("../img/close.png") no-repeat center center;
       transition: transform 0.1s linear; }
-      body > main .contacts .close, body > main .contacts .close:hover {
+      body > main .contacts .close-form, body > main .contacts .close-form:hover {
         border: 0;
         outline: 0; }
-      body > main .contacts .close:hover {
+      body > main .contacts .close-form:hover {
         transform: rotate(90deg); }
     body > main .contacts__title {
       margin-top: 1px;

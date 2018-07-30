@@ -1,8 +1,4 @@
 /*  MEDIA */
-@media screen and (min-width: 2560px) {
-  body {
-    width: 2560px;
-    margin: 0 auto; } }
 @media screen and (min-width: 1600px) {
   body {
     font-size: 20px; }
@@ -20,6 +16,11 @@
         margin: 0; }
     body main .funnel {
       min-height: 600px; }
+      body main .funnel__list {
+        width: 100%; }
+      body main .funnel__img {
+        width: 100%;
+        height: 100%; }
     body main .services__item__leave_claim {
       height: 40px; }
     body main .cases__title {
@@ -62,14 +63,6 @@
       font-size: 3em; }
     body h2 {
       font-size: 2em; }
-    body main .funnel__list {
-      width: 100%; }
-      body main .funnel__list__item .result {
-        display: initial; }
-      body main .funnel__list-wrap {
-        background-image: none; }
-    body main .funnel__img {
-      display: none; }
     body main .when__item {
       min-height: 200px; }
     body main .services__item {
@@ -95,7 +88,7 @@
         margin-bottom: 20px; }
       body main .contacts .form__submit {
         width: 50%; }
-      body main .contacts .form .close {
+      body main .contacts .form .close-form {
         width: 20px;
         height: 20px;
         top: 20px;
