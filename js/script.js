@@ -45,13 +45,12 @@ $(function () {
 
     // ------------SCROLL ON CLICK---------
     $('.more').click(function () {
-        $('.header').addClass('fixed');
-
-        var offset = $('.funnel').offset().top - $('.header').outerHeight();
+        var offset = $('.funnel').offset().top - $('.header').height();
         $('html,body').animate({
                 scrollTop: offset
             },
             'slow');
+        
     });
     // ------------END SCROLL ON CLICK---------
 
@@ -64,16 +63,17 @@ $(function () {
     // ---------------END SMOOTH SHOW ON SCROLL-----------
 
     // --------------HEADER FIXED-----------
-    var headerEvent = $('.header__logo').offset().top;
-    headerEvent += 20;  //
 
+    var headerEvent = 0;
     headerCheck();
     window.onscroll = function () {
         headerCheck()
     };
 
     function headerCheck() {
-        if (window.pageYOffset > headerEvent) {
+        var pageOffset = window.pageYOffset;
+
+        if (pageOffset > headerEvent) {
             $('.header').addClass('fixed');
         } else {
             $('.header').removeClass('fixed');
@@ -82,7 +82,7 @@ $(function () {
     // --------------END HEADER FIXED-----------
 
     // ------------FORM VALIDATE-------------
-    $("#phone").attr('type','text').mask("8(999) 999-9999");
+    $("#phone").attr('type', 'text').mask("8(999) 999-9999");
     // ------------END FORM VALIDATE-------------
 
 })
