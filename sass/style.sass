@@ -93,8 +93,8 @@ body
 
 .info
     // min-height: 474px
-    padding-top: 91px
-    padding-bottom:  91px
+    padding-top: 89px
+    padding-bottom:  89px
     text-align: center
     &__title
         padding: 32px round(1.904%)
@@ -149,17 +149,16 @@ body
 .when
     // min-height: 671px
     background-color: #281922    
-    padding-bottom: 8px
+    padding-bottom: 16px
     &__item
         min-height: 220px
-        margin-bottom: 29px  
+        margin-bottom: 26px  
         padding: 0 3.5%
         box-sizing: border-box
         &__icon
             width: 64px
             height: 64px
-            margin-top: 20px
-            margin-bottom: 24px
+            margin: 23px auto 
         &__text
 
 .services
@@ -188,17 +187,23 @@ body
                     height: 102px
                     border: 1px solid #fff
                     border-radius: 50%
+                    margin: 0 auto
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    box-sizing: border-box
                 &__price
                     display: none
                     &-wrap
-                        @for $i from 1 through 3
-                            &.price_#{$i}
-                                background-image: url(../img/services/price_with_label_#{$i}.png)
-                        background-repeat: no-repeat
-                        background-position: center center
-                        height: 40px
+                        // @for $i from 1 through 3
+                        //     &.price_#{$i}
+                        //         background-image: url(../img/services/price_with_label_#{$i}.png)
+                        // background-repeat: no-repeat
+                        // background-position: center center
+                        // height: 40px
                         position: relative
-                        bottom: 36px
+                        bottom: 32px
+                        margin: 0 auto
         &__text, &__leave_claim
             margin-top: 20px
         &__text

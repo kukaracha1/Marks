@@ -1,0 +1,60 @@
+.sp {
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  display: block; }
+  .sp.sp-service_1 {
+    background-position: -5px -5px;
+    width: 51px;
+    height: 47px; }
+  .sp.sp-service_2 {
+    background-position: -66px -5px;
+    width: 55px;
+    height: 52px; }
+  .sp.sp-service_3 {
+    background-position: -131px -5px;
+    width: 48px;
+    height: 49px; }
+  .sp.sp-case_1 {
+    background-position: -131px -64px;
+    width: 89px;
+    height: 20px; }
+  .sp.sp-case_2 {
+    background-position: -5px -94px;
+    width: 85px;
+    height: 85px; }
+  .sp.sp-case_3 {
+    background-position: -100px -94px;
+    width: 96px;
+    height: 25px; }
+  .sp.sp-price_1 {
+    background-position: -100px -129px;
+    width: 131px;
+    height: 40px; }
+  .sp.sp-price_2 {
+    background-position: -100px -179px;
+    width: 131px;
+    height: 40px; }
+  .sp.sp-price_3 {
+    background-position: -5px -229px;
+    width: 131px;
+    height: 40px; }
+  .sp.sp-when_1 {
+    background-position: -230px -5px;
+    width: 64px;
+    height: 64px; }
+  .sp.sp-when_2 {
+    background-position: -241px -79px;
+    width: 64px;
+    height: 64px; }
+  .sp.sp-when_3 {
+    background-position: -241px -153px;
+    width: 64px;
+    height: 64px; }
+  .sp.sp-when_4 {
+    background-position: -241px -227px;
+    width: 64px;
+    height: 64px; }
+  .sp.sp-when_5 {
+    background-position: -304px -5px;
+    width: 64px;
+    height: 64px; }

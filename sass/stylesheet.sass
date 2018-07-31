@@ -1,0 +1,67 @@
+@mixin stitches-sp($x: 0, $y: 0, $width: 0, $height: 0)
+    background-position: $x $y
+    width: $width
+    height: $height
+
+
+.sp 
+    background-image: url('../img/spritesheet.png')
+    background-repeat: no-repeat
+    display: block
+
+    &.sp-service_1 
+        @include stitches-sp(-5px, -5px, 51px, 47px)
+    
+
+    &.sp-service_2 
+        @include stitches-sp(-66px, -5px, 55px, 52px)
+    
+
+    &.sp-service_3 
+        @include stitches-sp(-131px, -5px, 48px, 49px)
+    
+
+    &.sp-case_1 
+        @include stitches-sp(-131px, -64px, 89px, 20px)
+    
+
+    &.sp-case_2 
+        @include stitches-sp(-5px, -94px, 85px, 85px)
+    
+
+    &.sp-case_3 
+        @include stitches-sp(-100px, -94px, 96px, 25px)
+    
+
+    &.sp-price_1 
+        @include stitches-sp(-100px, -129px, 131px, 40px)
+    
+
+    &.sp-price_2 
+        @include stitches-sp(-100px, -179px, 131px, 40px)
+    
+
+    &.sp-price_3 
+        @include stitches-sp(-5px, -229px, 131px, 40px)
+    
+
+    &.sp-when_1 
+        @include stitches-sp(-230px, -5px, 64px, 64px)
+    
+
+    &.sp-when_2 
+        @include stitches-sp(-241px, -79px, 64px, 64px)
+    
+
+    &.sp-when_3 
+        @include stitches-sp(-241px, -153px, 64px, 64px)
+    
+
+    &.sp-when_4 
+        @include stitches-sp(-241px, -227px, 64px, 64px)
+    
+
+    &.sp-when_5 
+        @include stitches-sp(-304px, -5px, 64px, 64px)
+    
+
