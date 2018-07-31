@@ -8,7 +8,8 @@ body {
     width: 100%;
     content: "";
     display: block;
-    background: url("../img/bkg.jpg") #c63245 no-repeat;
+    background-repeat: no-repeat;
+    background-color: #c63245;
     /* SHOULD CHECK IF ITS GOOD FOR IE 10 */
     background-blend-mode: darken;
     background-size: cover;

@@ -1,6 +1,24 @@
 
 /*  MEDIA */
 
+@supports (background-blend-mode: darken)
+    body
+        &:before
+            background-image: url('../img/bkg.jpg')
+    .main
+        &:before
+            content: ''
+
+/*  for Edge */
+@supports not (background-blend-mode: darken)
+    body
+        &:before
+            background-image: url('../img/bkg-darken.jpg')
+    .main
+        &:before
+            content: unset
+
+/*  for IE */
 @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active)
     body
         &:before
@@ -8,6 +26,8 @@
     .main
         &:before
             content: unset
+
+
 
 @media screen and (min-width    :   1600px)
     body
