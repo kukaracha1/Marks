@@ -1,4 +1,10 @@
 /*  MEDIA */
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body:before {
+    background-image: url("../img/bkg-darken.jpg"); }
+
+  .main:before {
+    content: unset; } }
 @media screen and (min-width: 1600px) {
   body {
     font-size: 20px; }
@@ -38,10 +44,9 @@
   .cases__item__percents {
     line-height: 2; }
 
-  .contacts .form__input {
-    height: 40px; }
-  .contacts .form__submit {
-    height: 40px; } }
+  .contacts .form__input, .contacts .form__msg {
+    height: 40px;
+    font-size: 1.4em; } }
 @media screen and (max-width: 870px) {
   .cases__title {
     top: -25px; }

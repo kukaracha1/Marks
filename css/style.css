@@ -24,18 +24,19 @@ body {
   padding: 76px 7.17423% 23px;
   box-sizing: border-box;
   width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
-  position: absolute;
-  transition: background-color 0.1s linear; }
+  z-index: 99;
+  transition: background-color, padding 0.2s ease-out;
+  transition-delay: 0.3s; }
   .header__main {
     max-width: 1200px;
     margin: 0 auto; }
   .header.fixed {
     background-color: #1d191d;
-    position: fixed;
     padding-top: 25px;
-    z-index: 99; }
+    transition-delay: unset; }
   .header__start {
     width: 23.077%;
     height: 60px;
@@ -304,9 +305,11 @@ body {
   .contacts .form__input, .contacts .form__msg, .contacts .form__submit {
     border: 0; }
   .contacts .form__input, .contacts .form__msg {
-    padding: 17px;
+    padding: 10px 17px;
     color: rgba(0, 0, 0, 0.5);
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    font-size: 1.1em;
+    line-height: 1.5; }
   .contacts .form__input {
     margin-bottom: 30px;
     float: left;

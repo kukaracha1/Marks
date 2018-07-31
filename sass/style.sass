@@ -12,7 +12,7 @@ body
         width: 100%
         content: ''
         display: block
-        background: url('../img/bkg.jpg') #c63245 no-repeat
+        background: url('../img/bkg.jpg') rgba(198,50,69,1) no-repeat
         /* SHOULD CHECK IF ITS GOOD FOR IE 10 */
         background-blend-mode: darken
         background-size: cover
@@ -28,18 +28,19 @@ body
     padding: 25px+51px #{$bodyPadLR + 15/1366*100%} 23px
     box-sizing: border-box
     width: 100%
+    position: fixed
     top: 0
     left: 0
-    position: absolute
-    transition: background-color 0.1s linear
+    z-index: 99
+    transition: (background-color, padding) 0.2s ease-out
+    transition-delay: 0.3s
     &__main
         max-width: 1200px
         margin: 0 auto
     &.fixed
         background-color: #1d191d
-        position: fixed
         padding-top: 25px
-        z-index: 99
+        transition-delay: unset
     &__start
         width: 23.077%
         height: 60px
@@ -329,9 +330,11 @@ body
 
         &__input,
         &__msg
-            padding: 17px
+            padding: 10px 17px
             color:  rgba(0, 0, 0, 0.5)
             box-sizing: border-box
+            font-size: 1.1em
+            line-height: 1.5
         &__input
             margin-bottom: 30px
             float: left

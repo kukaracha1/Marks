@@ -1,6 +1,14 @@
 
 /*  MEDIA */
 
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    body
+        &:before
+            background-image: url('../img/bkg-darken.jpg')
+    .main
+        &:before
+            content: unset
+            
 @media screen and (min-width    :   1600px)
     body
         font-size: 20px
@@ -50,10 +58,10 @@
                 line-height: 2
     .contacts
         .form   
-            &__input
+            &__input,
+            &__msg
                 height: 40px
-            &__submit
-                height: 40px
+                font-size: 1.4em
 @media screen and (max-width    :   870px) 
     .cases
         &__title
