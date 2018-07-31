@@ -29,13 +29,29 @@ body {
   top: 0;
   left: 0;
   z-index: 99;
-  transition: background-color, padding 0.3s ease-out; }
+  transition-property: padding;
+  transition-delay: 0.1s; }
+  .header, .header:before {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; }
+  .header:before {
+    content: "";
+    width: 100%;
+    background-color: #1d191d;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition-property: opacity; }
   .header__main {
     max-width: 1200px;
     margin: 0 auto; }
   .header.fixed {
-    background-color: #1d191d;
     padding-top: 25px; }
+    .header.fixed:before {
+      opacity: 1; }
   .header__start {
     width: 23%;
     height: 60px;
