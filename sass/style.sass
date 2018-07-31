@@ -32,6 +32,9 @@ body
     left: 0
     position: absolute
     transition: background-color 0.1s linear
+    &__main
+        max-width: 1200px
+        margin: 0 auto
     &.fixed
         background-color: #1d191d
         position: fixed
@@ -69,7 +72,7 @@ body
         z-index: -1
 
 .info
-    min-height: 474px
+    // min-height: 474px
     padding-top: 91px
     padding-bottom:  91px
     text-align: center
@@ -77,9 +80,9 @@ body
         padding: 32px 1.904%
         margin: 0
 .funnel
-    min-height: 791px 
+    // min-height: 791px 
     background-color: #524199
-    padding-bottom: 16px
+    padding-bottom: 37px
 
     &__title
         text-align: left
@@ -124,9 +127,9 @@ body
         height: 612.56px
 
 .when
-    min-height: 671px
+    // min-height: 671px
     background-color: #281922    
-    padding-bottom: 0
+    padding-bottom: 8px
     &__item
         min-height: 220px
         margin-bottom: 29px  
@@ -139,9 +142,9 @@ body
             margin-bottom: 24px
         &__text
 .services
-    min-height: 1270px
+    // min-height: 1270px
     background-color: #7f222e   
-    padding-bottom: 0
+    padding-bottom: 18px
     &__title
         margin-bottom: 13px
     &__item
@@ -190,9 +193,11 @@ body
             border-width: 1px
             border-color:  #e73d34
             font-size: 1.119em
-            line-height: 2
+.contacts,
 .cases
-    min-height: 646px
+    padding-bottom: 70px
+.cases
+    // min-height: 646px
     background-color: #281922  
     padding-top: 90px
     &__title
@@ -206,7 +211,7 @@ body
     &__list
         &_wrap          
             border: 3px solid #382631
-            padding-bottom: 68px
+            padding-bottom: 24px
     &__item
         padding: 0 5.7787492776%
         box-sizing: border-box
@@ -248,6 +253,7 @@ body
             border-color:  #892531
             border-style: solid
             width: 64%
+            min-width: 76px
             height: 36px
             color:  #fafafa
             font-size: 1.35em
@@ -265,19 +271,20 @@ body
                 box-sizing: border-box
                 border-right: 2px solid #892531
                 border-top: 2px solid #892531
+                margin: 0 -24px
             &:before
-                left: -24px
+                left: 0
                 transform: rotate(45deg) skew(15deg,15deg)
             &:after
-                right: -24px
+                right: 0
                 transform: rotate(-135deg) skew(15deg,15deg)
 
         &__result
-            margin-top: 13px
-
+            width: 66%
+            margin: 13px auto
 
 .contacts
-    min-height: 686px
+    // min-height: 686px
     background: url('../img/form-bkg.jpg') #1d191d  no-repeat bottom right
     position: relative
     &-wrap
@@ -348,15 +355,12 @@ body
             font-size: 1.2em
             font-weight: 100
 .footer
-    min-height: 143px
+    // min-height: 143px
     padding-top: 44px
     padding-bottom: 44px
     box-sizing: border-box
     a
-        border-bottom: 1px solid transparent
         font-size: 1.063em
-        &:hover
-            border-bottom: 1px solid #622427
     .left-side
         .phone, .mail
             display: block

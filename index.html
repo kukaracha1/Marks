@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <!--https://sonarwhal.com/scanner/53c94390-3000-4620-8a8e-5314686be613-->
+
 <head>
     <title>MARKS LAYOUT</title>
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/general.css">
@@ -17,9 +16,11 @@
 <body>
     <header class="header">
         <!--<header class="fixed">-->
-        <img src="img/logo.png" alt="" class="header__logo fleft">
-        <button class="button button_round header__start fright show-form">Начать работу!</button>
-        <a href="" class="header__phone fright"> + 7 (495) 268-02-56</a>
+        <div class="header__main">
+            <img src="img/logo.png" alt="" class="header__logo fleft">
+            <button class="btn btn_round header__start fright show-form">Начать работу!</button>
+            <a target="_blank" href="tel: +74952680256" class="link link_h header__phone fright"> + 7 (495) 268-02-56</a>
+        </div>
     </header>
     <!--<main role="main">-->
     <main class="main">
@@ -97,7 +98,8 @@
                     <!--SHOULD BE ICON OR SVG-->
                     <img src="img/when/3.png" alt="" class="when__item__icon">
                     <p class="when__item__text">Необходимо снизить расходы на прием и обработку заказов, отладить систему продаж, приема и обработки
-                        заказа</p>
+                        заказа
+                    </p>
                 </div>
                 <div class="when__item list__item list__item_4">
                     <!--SHOULD BE ICON OR SVG-->
@@ -141,7 +143,7 @@
                             <li class="ul__li">Построение системы Email-маркетинга</li>
                         </ul>
                     </article>
-                    <button class="button button_round services__item__leave_claim list__item_2 show-form">Оставить заявку</button>
+                    <button class="btn btn_round services__item__leave_claim list__item_2 show-form">Оставить заявку</button>
                 </section>
                 <section class="services__item list__item list__item_12 list underline underline_left">
                     <header class="services__item__label list__item_3">
@@ -160,7 +162,7 @@
                             <li class="ul__li">Редизайн и подготовка рекламных материалов для ваших страниц</li>
                             <li class="ul__li">Настройка системы сбора заявок и звонков с сайта</li>
                         </ul>
-                    </article> <button class="button button_round services__item__leave_claim list__item_2 show-form">Оставить заявку</button>
+                    </article> <button class="btn btn_round services__item__leave_claim list__item_2 show-form">Оставить заявку</button>
                 </section>
                 <section class="services__item list__item list__item_12 list">
                     <header class="services__item__label list__item_3">
@@ -180,7 +182,7 @@
                             <li class="ul__li">Базовая настройка бизнес-процессов приема, обработки заказа и допродаж</li>
                             <li class="ul__li">Автоматическая загрузка заявок и заказов в CRM</li>
                         </ul>
-                    </article> <button class="button button_round services__item__leave_claim list__item_2 show-form">Оставить заявку</button>
+                    </article> <button class="btn btn_round services__item__leave_claim list__item_2 show-form">Оставить заявку</button>
                 </section>
             </div>
         </section>
@@ -236,23 +238,23 @@
                 </header>
                 <form class="contacts__form">
                     <div class="form__input-wrap clr">
-                        <input class="input form__input" type="text" placeholder="Ваше имя *" name="name" id="name" required>
-                        <input class="input form__input" type="text" placeholder="Бюджет" name="budget" id="budget">
-                        <input class="input form__input" type="number" placeholder="Контактный телефон *" name="phone" id="phone" required>
-                        <input class="input form__input" type="email" placeholder="Email" name="mail" id="mail">
+                        <input class="inp form__input" type="text" placeholder="Ваше имя *" name="name" id="name" required>
+                        <input class="inp form__input" type="text" placeholder="Бюджет" name="budget" id="budget">
+                        <input class="inp form__input" type="number" placeholder="Контактный телефон *" name="phone" id="phone" required>
+                        <input class="inp form__input" type="email" placeholder="Email" name="mail" id="mail">
                     </div>
-                    <textarea class="input form__msg" name="details" id="details" placeholder="Детали проекта *" required></textarea>
-                    <input class="button form__submit" type="submit" value="Отправить">
+                    <textarea class="inp form__msg" name="details" id="details" placeholder="Детали проекта *" required></textarea>
+                    <input class="btn form__submit" type="submit" value="Отправить">
                 </form>
             </section>
         </div>
     </main>
     <footer class="sect footer">
         <div class="fleft left-side">
-            <a href="" class="phone">+7 495 268-02-56</a>
-            <a href="" class="mail">mail@marks.agency</a>
+            <a target="_blank" href="tel: +74952680256" class="link link_h_red phone">+7 495 268-02-56</a>
+            <a target="_blank" href="mailto:mail@marks.agency" class="link link_h_red mail">mail@marks.agency</a>
         </div>
-        <a href="" class="address fright">115230, Москва, Хлебозаводский проезд, д.7, стр. 9 </a>
+        <a target="_blank" href="" class="link link_h_red address fright">115230, Москва, Хлебозаводский проезд, д.7, стр. 9 </a>
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.viewportchecker.min.js"></script>

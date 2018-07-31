@@ -1,6 +1,6 @@
 $gridSize: 12 !default
 $sectPadTB: 64px
-$sectPadLR: 95.62 / 1366 * 100%
+$sectPadLR: 95 / 1366 * 100%
 /*  common styles   */
 
 @font-face
@@ -29,6 +29,7 @@ $sectPadLR: 95.62 / 1366 * 100%
 
 body
     max-width: 1366px
+    min-width: 160px
     margin: 0 auto
 
     /*  GENERAL FONT */
@@ -59,10 +60,10 @@ h2
     letter-spacing: -0.017em
     font-weight: 100
     margin: 0
-.button, .input
+.btn, .inp
     transition-duration: 0.1s
     transition-timing-function: linear
-.button
+.btn
     transition-property: background-color, color
     height: 60px
     border-style: solid
@@ -72,11 +73,18 @@ h2
     &:hover
         background-color: #e73d34!important
         color: #fff!important
-.input
+.inp
     transition-property: outline-color
     outline: 2px solid transparent
     &:hover, &:focus
         outline-color: rgba(0, 0, 0, 0.5)!important
+.link
+    border-bottom: 1px solid transparent
+    &_h
+        &:hover
+            border-bottom-color: inherit
+        &_red:hover
+            border-bottom-color: #622427
 
 .clr::after
     content :   ''
