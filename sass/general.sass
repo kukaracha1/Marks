@@ -185,11 +185,16 @@ h2
         height: 4px
         display: block
         margin: 15px auto 0
-.ul
+.roll
     margin: 0
-    padding: 0 40px
-    list-style-image: url('../img/services/list-image.png')
-    &__li
-        margin-top: 16.5px
+    padding: 0
+    // list-style-image: url('../img/services/list-image.png')
+    list-style: none
+    &__item
+        margin-top: 16px
         font-size: 1.1em
         line-height: 1.647
+        &:before
+            content: '\2014'
+            margin-left: 1%
+            margin-right: 3%

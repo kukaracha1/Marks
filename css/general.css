@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  common styles   */
 @font-face {
   font-family: Roboto;
@@ -571,11 +572,15 @@ h2 {
     display: block;
     margin: 15px auto 0; }
 
-.ul {
+.roll {
   margin: 0;
-  padding: 0 40px;
-  list-style-image: url("../img/services/list-image.png"); }
-  .ul__li {
-    margin-top: 16.5px;
+  padding: 0;
+  list-style: none; }
+  .roll__item {
+    margin-top: 16px;
     font-size: 1.1em;
     line-height: 1.647; }
+    .roll__item:before {
+      content: "—";
+      margin-left: 1%;
+      margin-right: 3%; }
