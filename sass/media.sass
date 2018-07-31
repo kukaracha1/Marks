@@ -8,7 +8,7 @@
     .main
         &:before
             content: unset
-            
+
 @media screen and (min-width    :   1600px)
     body
         font-size: 20px
@@ -35,9 +35,12 @@
             margin: 0
     .funnel
         min-height: 600px
+        padding-top: 50px
         &__list
             width: 100%
             font-size: 16px
+            &-wrap
+                text-align: center
             &__item
                 .result
                     // display: initial
@@ -45,6 +48,7 @@
             // display: none
             width: initial
             height: 100%
+            float: none
 
     .services
         &__item
@@ -58,9 +62,10 @@
                 line-height: 2
     .contacts
         .form   
+            &__input
+                height: 40px
             &__input,
             &__msg
-                height: 40px
                 font-size: 1.4em
 @media screen and (max-width    :   870px) 
     .cases
@@ -153,6 +158,19 @@
 
 
 @media screen and (max-width    :   425px)
+    .sect
+        padding-top: 20px
+        padding-bottom: 20px
+    .list
+        &__item
+            &_4
+                width: 100%
+    .roll
+        padding-right: 0
+        &__item
+            &:before
+                left: -15.7%
+
     body
         font-size: 13px
         padding-top: 91px
@@ -173,6 +191,9 @@
         font-size: 3em
     h2
         font-size: 2em
+    .funnel
+        padding-top: 50px
+        
     .when
         &__item
             min-height: 200px
@@ -202,22 +223,14 @@
                 margin-bottom: 20px
             &__submit
                 width: 50%
-            .close-form
-                width: 20px
-                height: 20px
-                top: 20px
-                right: 6.22255%                    
+    .close-form
+        width: 20px
+        height: 20px
+        top: 20px
+        right: 6.22255%                    
     .footer
         .left-side
             margin-bottom: 20px
-
-    .sect
-        padding-top: 20px!important
-        padding-bottom: 20px!important
-    .list
-        &__item
-            &_4
-                width: 100%
 
 @media screen and (max-width    :   375px)
     body

@@ -28,13 +28,17 @@
       margin: 0; }
 
   .funnel {
-    min-height: 600px; }
+    min-height: 600px;
+    padding-top: 50px; }
     .funnel__list {
       width: 100%;
       font-size: 16px; }
+      .funnel__list-wrap {
+        text-align: center; }
     .funnel__img {
       width: initial;
-      height: 100%; }
+      height: 100%;
+      float: none; }
 
   .services__item__leave_claim {
     height: 40px; }
@@ -44,8 +48,9 @@
   .cases__item__percents {
     line-height: 2; }
 
+  .contacts .form__input {
+    height: 40px; }
   .contacts .form__input, .contacts .form__msg {
-    height: 40px;
     font-size: 1.4em; } }
 @media screen and (max-width: 870px) {
   .cases__title {
@@ -118,6 +123,18 @@
   .contacts .form__submit {
     font-size: 1em; } }
 @media screen and (max-width: 425px) {
+  .sect {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+  .list__item_4 {
+    width: 100%; }
+
+  .roll {
+    padding-right: 0; }
+    .roll__item:before {
+      left: -15.7%; }
+
   body {
     font-size: 13px;
     padding-top: 91px; }
@@ -141,6 +158,9 @@
 
   h2 {
     font-size: 2em; }
+
+  .funnel {
+    padding-top: 50px; }
 
   .when__item {
     min-height: 200px; }
@@ -166,21 +186,15 @@
       margin-bottom: 20px; }
     .contacts .form__submit {
       width: 50%; }
-    .contacts .form .close-form {
-      width: 20px;
-      height: 20px;
-      top: 20px;
-      right: 6.22255%; }
+
+  .close-form {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 6.22255%; }
 
   .footer .left-side {
-    margin-bottom: 20px; }
-
-  .sect {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important; }
-
-  .list__item_4 {
-    width: 100%; } }
+    margin-bottom: 20px; } }
 @media screen and (max-width: 375px) {
   body h2 {
     font-size: 1.9em; }

@@ -28,15 +28,13 @@ body {
   top: 0;
   left: 0;
   z-index: 99;
-  transition: background-color, padding 0.2s ease-out;
-  transition-delay: 0.3s; }
+  transition: background-color, padding 0.3s ease-out; }
   .header__main {
     max-width: 1200px;
     margin: 0 auto; }
   .header.fixed {
     background-color: #1d191d;
-    padding-top: 25px;
-    transition-delay: unset; }
+    padding-top: 25px; }
   .header__start {
     width: 23%;
     height: 60px;
@@ -284,20 +282,6 @@ body {
     animation: popup_show 1s; }
     .contacts-wrap.popup .close-form {
       display: initial; }
-  .contacts .close-form {
-    display: none;
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    top: 35px;
-    right: 3%;
-    background: url("../img/close.png") no-repeat center center;
-    transition: transform 0.1s linear; }
-    .contacts .close-form, .contacts .close-form:hover {
-      border: 0;
-      outline: 0; }
-    .contacts .close-form:hover {
-      transform: rotate(90deg); }
   .contacts__title {
     margin-top: 1px;
     margin-bottom: 45px;

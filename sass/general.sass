@@ -200,3 +200,19 @@ h2
             position: absolute
             top: 0
             left: -5.7%
+
+.close-form
+    display: none
+    position: absolute
+    width: 35px
+    height: 35px
+    top: 35px
+    right: round(35/1200 *100%)
+    background: url('../img/close.png') no-repeat center center
+    transition: transform 0.1s linear
+    &,&:hover
+        border: 0
+        outline: 0
+    &:hover
+        transform: rotate(90deg)
+            

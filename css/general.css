@@ -586,3 +586,18 @@ h2 {
       position: absolute;
       top: 0;
       left: -5.7%; }
+
+.close-form {
+  display: none;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 35px;
+  right: 3%;
+  background: url("../img/close.png") no-repeat center center;
+  transition: transform 0.1s linear; }
+  .close-form, .close-form:hover {
+    border: 0;
+    outline: 0; }
+  .close-form:hover {
+    transform: rotate(90deg); }

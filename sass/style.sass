@@ -32,15 +32,15 @@ body
     top: 0
     left: 0
     z-index: 99
-    transition: (background-color, padding) 0.2s ease-out
-    transition-delay: 0.3s
+    transition: (background-color, padding) 0.3s ease-out
+    // transition-delay: 0.4s
     &__main
         max-width: 1200px
         margin: 0 auto
     &.fixed
         background-color: #1d191d
         padding-top: 25px
-        transition-delay: unset
+        // transition-delay: unset
     &__start
         width: round(23.077%)
         height: 60px
@@ -305,20 +305,6 @@ body
             animation: popup_show 1s
             .close-form
                 display: initial
-    .close-form
-        display: none
-        position: absolute
-        width: 35px
-        height: 35px
-        top: 35px
-        right: round(35/1200 *100%)
-        background: url('../img/close.png') no-repeat center center
-        transition: transform 0.1s linear
-        &,&:hover
-            border: 0
-            outline: 0
-        &:hover
-            transform: rotate(90deg)
     &__title
         margin-top: 1px
         margin-bottom: 45px
