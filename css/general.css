@@ -49,7 +49,7 @@ h1 {
   font-size: 4.3em;
   font-weight: 100;
   margin: 0;
-  letter-spacing: -0.024Em;
+  letter-spacing: -0.024em;
   line-height: 1.19;
   margin-left: 0.79155%; }
 
@@ -113,12 +113,12 @@ h2 {
   position: absolute;
   bottom: 0; }
 .underline_right:before {
-  left: 6.95461%; }
+  left: 7%; }
 .underline_left:before {
-  left: -6.95461%; }
+  left: -7%; }
 
 .sect {
-  padding: 64px 6.95461%;
+  padding: 64px 7%;
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto; }
@@ -574,13 +574,15 @@ h2 {
 
 .roll {
   margin: 0;
-  padding: 0;
+  padding: 0 39px;
   list-style: none; }
   .roll__item {
     margin-top: 16px;
     font-size: 1.1em;
-    line-height: 1.647; }
+    line-height: 1.647;
+    position: relative; }
     .roll__item:before {
       content: "—";
-      margin-left: 1%;
-      margin-right: 3%; }
+      position: absolute;
+      top: 0;
+      left: -5.7%; }

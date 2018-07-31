@@ -1,6 +1,6 @@
 $gridSize: 12 !default
 $sectPadTB: 64px
-$sectPadLR: 95 / 1366 * 100%
+$sectPadLR: round(95 / 1366 * 100%)
 /*  common styles   */
 
 @font-face
@@ -52,7 +52,7 @@ h1
     font-size: 4.3em
     font-weight: 100
     margin: 0
-    letter-spacing: -0.024Em
+    letter-spacing: -0.024em
     line-height: 1.19
     margin-left: 0.79155%
 h2
@@ -151,13 +151,13 @@ h2
 .list__item
     @for $i from 1 to $gridSize
         &_#{$i}
-            width: $i / $gridSize * 100%
+            width: ($i / $gridSize * 100%)
         &_offset-#{$i}
-            margin-left: $i / $gridSize * 100%
+            margin-left: ($i / $gridSize * 100%)
         @for $j from 1 to $gridSize
             &_#{$j}_offset-#{$i}
-                width: $j / $gridSize * 100%
-                margin-left: $i / $gridSize * 100%
+                width: ($j / $gridSize * 100%)
+                margin-left: ($i / $gridSize * 100%)
     &_#{$gridSize}
         width: 100%
         
@@ -187,14 +187,16 @@ h2
         margin: 15px auto 0
 .roll
     margin: 0
-    padding: 0
+    padding: 0 39px
     // list-style-image: url('../img/services/list-image.png')
     list-style: none
     &__item
         margin-top: 16px
         font-size: 1.1em
         line-height: 1.647
+        position: relative
         &:before
             content: '\2014'
-            margin-left: 1%
-            margin-right: 3%
+            position: absolute
+            top: 0
+            left: -5.7%

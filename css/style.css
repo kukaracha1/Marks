@@ -1,6 +1,6 @@
 body {
   background-color: #281922;
-  padding: 181px 6.07613% 0;
+  padding: 181px 6% 0;
   /*  MARKS BKG  */ }
   body.popup {
     overflow: hidden; }
@@ -21,7 +21,7 @@ body {
 
 .header {
   min-height: 130px;
-  padding: 76px 7.17423% 23px;
+  padding: 76px 7% 23px;
   box-sizing: border-box;
   width: 100%;
   position: fixed;
@@ -38,11 +38,11 @@ body {
     padding-top: 25px;
     transition-delay: unset; }
   .header__start {
-    width: 23.077%;
+    width: 23%;
     height: 60px;
     box-sizing: border-box;
     background-color: #ffffff;
-    margin-left: 6.92972%;
+    margin-left: 7%;
     margin-top: 14px;
     border-radius: 60px;
     border: 0;
@@ -72,7 +72,7 @@ body {
   padding-bottom: 91px;
   text-align: center; }
   .info__title {
-    padding: 32px 1.904%;
+    padding: 32px 2%;
     margin: 0; }
 
 .funnel {
@@ -111,7 +111,7 @@ body {
   .funnel__img {
     position: relative;
     width: 52%;
-    height: 612.56px; }
+    height: 613px; }
 
 .when {
   background-color: #281922;
@@ -129,7 +129,7 @@ body {
 
 .services {
   background-color: #7f222e;
-  padding-bottom: 18px; }
+  padding-bottom: 22px; }
   .services__title {
     margin-bottom: 13px; }
   .services__item {
@@ -198,13 +198,13 @@ body {
     border: 3px solid #382631;
     padding-bottom: 24px; }
   .cases__item {
-    padding: 0 5.77875%;
+    padding: 0 6%;
     box-sizing: border-box; }
     .cases__item__icon {
       display: inline-block;
       vertical-align: middle;
-      max-width: 115.2px;
-      max-height: 115.2px; }
+      max-width: 115px;
+      max-height: 115px; }
       .cases__item__icon-wrap {
         margin-left: auto;
         margin-right: auto;
@@ -275,7 +275,7 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    padding: 100px 6.07613%;
+    padding: 100px 6%;
     width: 100%;
     box-sizing: border-box;
     overflow: scroll;
@@ -290,7 +290,7 @@ body {
     width: 35px;
     height: 35px;
     top: 35px;
-    right: 2.91667%;
+    right: 3%;
     background: url("../img/close.png") no-repeat center center;
     transition: transform 0.1s linear; }
     .contacts .close-form, .contacts .close-form:hover {
@@ -328,7 +328,7 @@ body {
     margin-bottom: 27px; }
   .contacts .form__submit {
     background-color: #892531;
-    width: 26.198%;
+    width: 26%;
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 100; }
