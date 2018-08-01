@@ -113,12 +113,12 @@ h2 {
   position: absolute;
   bottom: 0; }
 .underline_right:before {
-  left: 7%; }
+  left: 6%; }
 .underline_left:before {
-  left: -7%; }
+  left: -6%; }
 
 .sect {
-  padding: 64px 7%;
+  padding: 64px 6%;
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto; }

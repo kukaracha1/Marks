@@ -41,6 +41,22 @@
                 line-height: 1.3
 
 //      1366px is default width
+@media screen and (max-width    :   1300px)
+    .funnel
+        &__list
+            width: 100%
+            font-size: 16px
+            &-wrap
+                text-align: center
+            &__item
+                .result
+                    // display: initial
+        &__img
+            // display: none
+            width: initial
+            height: 100%
+            float: none
+
 
 @media screen and (max-width    :   1024px)
     body
@@ -56,19 +72,6 @@
     .funnel
         min-height: 600px
         padding-top: 50px
-        &__list
-            width: 100%
-            font-size: 16px
-            &-wrap
-                text-align: center
-            &__item
-                .result
-                    // display: initial
-        &__img
-            // display: none
-            width: initial
-            height: 100%
-            float: none
 
     .services
         &__item

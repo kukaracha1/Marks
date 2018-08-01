@@ -28,6 +28,16 @@
 
   .cases__item__percents {
     line-height: 1.3; } }
+@media screen and (max-width: 1300px) {
+  .funnel__list {
+    width: 100%;
+    font-size: 16px; }
+    .funnel__list-wrap {
+      text-align: center; }
+  .funnel__img {
+    width: initial;
+    height: 100%;
+    float: none; } }
 @media screen and (max-width: 1024px) {
   body {
     font-size: 13px; }
@@ -44,15 +54,6 @@
   .funnel {
     min-height: 600px;
     padding-top: 50px; }
-    .funnel__list {
-      width: 100%;
-      font-size: 16px; }
-      .funnel__list-wrap {
-        text-align: center; }
-    .funnel__img {
-      width: initial;
-      height: 100%;
-      float: none; }
 
   .services__item__leave_claim {
     height: 40px; }
