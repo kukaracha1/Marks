@@ -38,12 +38,16 @@
     width: initial;
     height: 100%;
     float: none; } }
+@media screen and (max-width: 1090px) and (min-width: 1025px) {
+  .services__item__leave_claim {
+    line-height: 30px; } }
 @media screen and (max-width: 1024px) {
   body {
     font-size: 13px; }
 
   .header__start {
-    height: 40px; }
+    height: 40px;
+    line-height: 40px; }
 
   .info {
     padding: 91px 0; }
@@ -56,7 +60,8 @@
     padding-top: 50px; }
 
   .services__item__leave_claim {
-    height: 40px; }
+    height: 40px;
+    line-height: 40px; }
 
   .cases__title {
     top: -25px; }
@@ -67,6 +72,9 @@
     height: 40px; }
   .contacts .form__input, .contacts .form__msg {
     font-size: 1.4em; } }
+@media screen and (max-width: 892px) and (min-width: 648px) {
+  .services__item__leave_claim {
+    line-height: 20px; } }
 @media screen and (max-width: 870px) {
   .cases__title {
     top: -25px; }
@@ -122,7 +130,8 @@
       float: right; }
 
   .cases__item__icon {
-    transform: scale(0.8); }
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
     .cases__item__icon-wrap {
       width: 88px;
       height: 88px; } }
@@ -162,6 +171,7 @@
       font-size: 1em;
       width: 40%;
       height: 30px;
+      line-height: 30px;
       margin-top: 0; }
     .header__phone {
       font-size: 1.175em;
@@ -239,6 +249,7 @@
       font-size: 0.85em;
       width: 60%;
       height: 20px;
+      line-height: 20px;
       margin-top: 0; }
     .header__phone {
       font-size: 0.875em;
@@ -246,3 +257,5 @@
 
   .contacts .form__submit {
     width: 100%; } }
+
+/*# sourceMappingURL=media.css.map */

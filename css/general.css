@@ -12,11 +12,21 @@
   font-family: Roboto;
   font-weight: 900;
   src: url("../fonts/Roboto-Bold.ttf"); }
+@-webkit-keyframes popup_show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 @keyframes popup_show {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+@-webkit-keyframes popup_hide {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 @keyframes popup_hide {
   0% {
     opacity: 1; }
@@ -60,14 +70,21 @@ h2 {
   margin: 0; }
 
 .btn, .inp {
-  transition-duration: 0.1s;
-  transition-timing-function: linear; }
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear; }
 
 .btn {
+  -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
   height: 60px;
+  line-height: 60px;
   border-style: solid;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: center;
+  padding: 0 1%;
+  box-sizing: border-box; }
   .btn_round {
     border-radius: 60px; }
   .btn:hover {
@@ -75,6 +92,7 @@ h2 {
     color: #fff !important; }
 
 .inp {
+  -webkit-transition-property: outline-color;
   transition-property: outline-color;
   outline: 2px solid transparent; }
   .inp:hover, .inp:focus {
@@ -115,10 +133,10 @@ h2 {
 .underline_right:before {
   left: 6%; }
 .underline_left:before {
-  left: -6%; }
+  left: -7%; }
 
 .sect {
-  padding: 64px 6%;
+  padding: 64px 7%;
   box-sizing: border-box;
   max-width: 1200px;
   margin: 0 auto; }
@@ -562,7 +580,8 @@ h2 {
     display: block;
     margin: 12px auto 1px;
     font-size: 0.5em;
-    transform: scaleX(1.5) scaleY(0.8); }
+    -webkit-transform: scaleX(1.5) scaleY(0.8);
+            transform: scaleX(1.5) scaleY(0.8); }
   .more:hover {
     color: rgba(255, 255, 255, 0.8);
     cursor: pointer; }
@@ -600,15 +619,22 @@ h2 {
   height: 35px;
   top: 35px;
   right: 3%;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
   transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
   background: transparent;
   font-size: 35px;
   line-height: 1;
   font-weight: 300;
   padding: 0;
-  transform: scale(2.5); }
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5); }
   .close-form, .close-form:hover {
     border: 0;
     outline: 0; }
   .close-form:hover {
-    transform: rotate(90deg) scale(2.5) translate(2px); }
+    -webkit-transform: rotate(90deg) scale(2.5) translate(2px);
+            transform: rotate(90deg) scale(2.5) translate(2px); }
+
+/*# sourceMappingURL=general.css.map */
