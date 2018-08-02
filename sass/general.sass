@@ -1,6 +1,6 @@
 $gridSize: 12 !default
 $sectPadTB: 64px
-$sectPadLR: floor(95 / 1366 * 100%)
+$sectPadLR: (95 / 1366 * 100%)
 /*  common styles   */
 
 @font-face
@@ -66,8 +66,12 @@ h2
 .btn
     transition-property: background-color, color
     height: 60px
+    line-height: 60px
     border-style: solid
     font-weight: 300
+    text-align: center
+    padding: 0 1%
+    box-sizing: border-box
     &_round
         border-radius: 60px
     &:hover
@@ -109,16 +113,16 @@ h2
         position: absolute
         bottom: 0
     &_right:before
-        left: $sectPadLR
+        left: floor($sectPadLR)
     &_left:before
-        left: -$sectPadLR
+        left: floor(-$sectPadLR)
 
 
 // [class^='sect_'],
 // [class*=' sect_']
 //     @extend .sect
 .sect
-    padding: $sectPadTB $sectPadLR
+    padding: $sectPadTB round($sectPadLR)
     box-sizing: border-box
     max-width: 1200px
     margin: 0 auto
